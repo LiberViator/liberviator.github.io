@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="lt-ie10 lt-ie9"> <![endif]-->
+<!--[if IE 9]><html class="lt-ie10"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html>
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    <!--*******************************************************
+    Name: OtherCentre
+    URL: http://otherthemes.com
+    Author: Other Themes
+    Version: 1.0.0
+    Changelog:
+    25.09.2016 Initial release
+    Photoset styles: Copyright 2016 Pixel Union
+    ********************************************************-->    
+    
+    <title>{Title} {block:SearchPage}{lang:Search results for SearchQuery} - {/block:SearchPage}{block:PostSummary} &mdash; {PostSummary}
+  {/block:PostSummary}</title>
+  
+    {block:Description}
+    <meta name="description" content="{MetaDescription}">
+    {/block:Description}
+
+
+    <link rel="apple-touch-icon" href="{PortraitURL-128}">
+    <link rel="apple-touch-icon-precomposed" href="{PortraitURL-128}">
+    <link rel="shortcut icon" href="{Favicon}">
+    <link rel="canonical" href="
+    {block:IndexPage}{BlogURL}{/block:IndexPage}
+    {block:PermalinkPage}{Permalink}{/block:PermalinkPage}">
+    <link rel="alternate" type="application/rss+xml" href="{RSS}"> 
+        
+    
+
+    {block:Hidden}
+    <!-- Font -->
+    <meta name="font:Body Font" content="Fang Song">
+    <meta name="text:Title Google Fonts" content="Maison Neue">
+    <meta name="text:Body Google Fonts" content="Maison Neue">
+
+    <!-- Toggles -->
+    <meta name="if:Center Content" content="0">
+    <meta name="if:Google Fonts" content="1">
+    <meta name="if:Show Logo Image" content="0">
+    <meta name="if:Show Like" content="1">
+    <meta name="if:Show Reblog" content="1">
+    <meta name="if:Show Date" content="0">
+    <meta name="if:Show Notes" content="0">
+    <meta name="if:Show Tags" content="0">
+    <meta name="if:Show Search" content="0">
+    
+    <!-- Image -->
+    <meta name="image:Logo Image" content="{Logo Image}">
+    <meta name="image:Preloader" content="{Preloader}">
+    
+    <!-- Select -->
+    <meta name="select:Preloader Animation" content="pulse" title="Pulse">
+    <meta name="select:Preloader Animation" content="tada" title="Tada">
+    <meta name="select:Preloader Animation" content="jello" title="Jello">
+
+    <!-- Text -->
+    <meta name="text:Blog Title Fontsize" content="16">
+    <meta name="text:Blog Description Fontsize" content="14">
+    <meta name="text:Blog Description LineHeight" content="1.4444444444">
+    <meta name="text:Navigation Fontsize" content="16">
+    <meta name="text:Navigation LineHeight" content="1.4444444444">
+    <meta name="text:Post Title Fontsize" content="24">
+    <meta name="text:Post Title LineHeight" content="1.4444444444">
+    <meta name="text:Post Caption Fontsize" content="16">
+    <meta name="text:Post Caption LineHeight" content="1.4444444444">
+    <meta name="text:Post Footer Fontsize" content="15">
+    <meta name="text:Post Footer LineHeight" content="1.4444444444">
+    <meta name="text:Post Quote Fontsize" content="24">
+    
+    <meta name="text:Behance URL" content="">
+    <meta name="text:Foursquare URL" content="">
+    <meta name="text:Weibo URL" content="">
+    <meta name="text:Skype URL" content="">
+    <meta name="text:Spotify URL" content="">
+    <meta name="text:Swarm URL" content="">
+    <meta name="text:Vine URL" content="">
+    <meta name="text:VK URL" content="">
+    <meta name="text:Dribbble URL" content="https://dribbble.com/otherthemes">
+    <meta name="text:Facebook URL" content="https://www.facebook.com/otherthemes/">
+    <meta name="text:Github URL" content="">
+    <meta name="text:Instagram URL" content="">
+    <meta name="text:LinkedIn URL" content="">
+    <meta name="text:Pinterest URL" content="">
+    <meta name="text:Rdio URL" content="">
+    <meta name="text:Tumblr URL" content="">
+    <meta name="text:Twitter URL" content="https://twitter.com/otherthemes">
+    <meta name="text:Vimeo URL" content="">
+    <meta name="text:Youtube URL" content="">
+    
+    <!-- Color -->
+    <meta name="color:Background Color" content="#FFFFFF" />
+    <meta name="color:Blog Title Color" content="#000" />
+    <meta name="color:Blog Description Color" content="#767676" />
+    <meta name="color:Sidebar Link Color" content="#DB3F3F" />
+    <meta name="color:Sidebar Link Hover Color" content="#ff0000" />
+    
+    
+    <meta name="color:Body Color" content="#000" />
+    <meta name="color:Body Link Color" content="#b2b2b2" />
+    <meta name="color:Post Footer Color" content="#000" />
+    {/block:Hidden}
+
+    <!-- HTML5 Shiv -->
+    <!--[if lt IE 9]>
+        <script src="http://static.tumblr.com/hriofhd/Qj0m8pn7q/html5shiv.js"></script>
+    <![endif]-->
+
+  <link rel="stylesheet" type="text/css" href="http://static.tumblr.com/nxwjyyg/OvMofy2xo/global.css">
+
+  {block:IfGoogleFonts}
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family={text:Title Google Fonts}:400,400italic,500,700,700italic">
+  
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family={text:Body Google Fonts}:400,400italic,500,700,700italic">
+  {/block:IfGoogleFonts}
+
+<style type="text/css">
+
+.tumblr-box {
+    display: block;
+}
+
+body {
+    font-family: {font:Body Font};
+    background: {color:Background Color};
+    color: {color:Body Color};
+}
+
+input {
+    background: {color:Background Color};
+    color: {color:Sidebar Link Color};
+    font: 16px {font:Body Font};
+}
+
+input::-webkit-input-placeholder {
+    font-family: 16px {font:Body Font};
+}
+
+body.feature-has-google-fonts {
+    font-family: {text:Body Google Fonts}, sans-serif;
+}
+
+body.feature-has-google-fonts input {
+    font: 16px {text:Body Google Fonts};
+}
+
+body.feature-has-google-fonts input::-webkit-input-placeholder {
+    font: 16px {text:Body Google Fonts}, sans-serif;
+}
+
+h1 {
+    color: {color:Blog Title Color};
+}
+
+.description {
+    color: {color:Blog Description Color};
+}
+
+a,
+.like_text {
+    color: {color:Link Color};
+}
+
+input[type="text"]:focus {
+    border-color: {color:Link Color};
+}
+
+h1 {
+    font-family: {TitleFont};
+    font-weight: {TitleFontWeight};
+    font-size: {text:Blog Title Fontsize}px;
+}
+
+body.feature-has-google-fonts h1 {
+    font-family: {text:Title Google Fonts}, sans-serif;
+}
+
+.header .search input,
+.header .search input::-webkit-input-placeholder,
+.header .header__nav a { 
+    font-size: {text:Navigation Fontsize}px;
+    line-height: {text:Navigation Lineheight};
+}
+
+h2 { 
+    font-size: {text:Post Title Fontsize}px; 
+    line-height: {text:Post Title Lineheight}; 
+}
+
+article,
+.pagination,
+.notes { 
+    font-size: {text:Post Caption Fontsize}px; 
+    line-height: {text:Post Caption Lineheight}; 
+}
+
+.header .description { 
+    font-size: {text:Blog Description Fontsize}px; 
+    line-height: {text:Blog Description Lineheight}; 
+}
+
+.post__footer, .post__footer a, .post__footer .like_text {
+    font-size: {text:Post Footer Fontsize}px; 
+    line-height: {text:Post Footer Lineheight};     
+}
+
+.post__quote {
+    font-size: {text:Post Quote Fontsize}px; 
+}
+
+.header a:after,
+.post__footer a:after,
+.like_text:after,
+.caption a:after,
+.source a:after,
+.post__title a:after,
+.post.text a:after,
+.notes a:after,
+.back__button:after {
+    background: {color:Body Link Hover Color};
+}
+
+.content .post a,
+.notes a,
+.back__button,
+.pagination-next {
+    color: {color:Body Link Color};
+}
+
+.content .post a:hover,
+.notes a:hover,
+.back__button:hover,
+.pagination-next:hover {
+    color: rgba({RGBcolor:Body Link Color},0.5);
+}
+
+.content .post .like_text,
+.content .post .post__footer a {
+    color: {color:Post Footer Color};   
+}
+
+.like_button:hover + .like_text,
+.content .post .post__footer a:hover {
+    color: rgba({RGBcolor:Post Footer Color},0.5);   
+}
+
+.header nav a {
+    color: {color:Sidebar Link Color};
+}
+
+.header nav a:after {
+    background: {color:Sidebar Link Hover Color};
+}
+
+.bottom__copyright a,
+h2, h2 > a {
+    color: {color:Body Color};
+}
+
+.bottom__copyright a:after {
+    background: {color:Body Color};
+}
+
+
+/****** END TUMBLR SYNTAX ******/
+
+{CustomCSS}
+
+</style>
+
+</head>
+
+<body class="{block:IndexPage}page-index{/block:IndexPage}{block:PermalinkPage}permalink{/block:PermalinkPage} {block:IfGoogleFonts}feature-has-google-fonts{/block:IfGoogleFonts} {block:IfCenterContent}feature-center-content{/block:IfCenterContent}">
+    <div class="overlay">
+        <div class="overlay__container">
+            <img src="{image:Preloader}" alt="preloader" class="overlay__preloader {select:Preloader Animation}" />
+        </div>
+    </div>
+    <div id="js-smooth" class="m-scene">
+        <div class="wrapper">
+            <div class="container clearfix">
+                <header class="header">
+                    <div class="header__left">
+                        <div class="header__left__left">
+                            {block:ShowAvatar}
+                            <div class="header__logo">
+                                <a href="/"><img src="{PortraitURL-96}" alt="{PhotoAlt}" class="fit" /></a>
+                            </div>
+                            {/block:ShowAvatar}
+                            {block:IfShowLogoImage} 
+                            <div class="header__logo">
+                                <a href="/"><img src="{image:Logo Image}" alt="{PhotoAlt}" class="header__logo_image" /></a>
+                            </div>
+                            {/block:IfShowLogoImage}
+                            <div class="header__left__right">
+                                <a href="/">
+                                    <h1>{Title}</h1>
+                                </a>
+                                <p class="description">{Description}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__right">
+                        <nav class="navigation">
+                            <ul class="header__nav">
+                                {block:HasPages}
+                                {block:Pages}
+                                <li>
+                                    <a href="{URL}">{Label}</a>
+                                </li>
+                                {/block:Pages}
+                                {/block:HasPages}
+                                {block:IfShowArchive}
+                                <li>
+                                    {lang:Archive}
+                                    <a href="/archive">{lang:Archive}</a>
+                                </li>
+                                {/block:IfShowArchive}
+                                {block:AskEnabled}
+                                <li>
+                                    <a href="/ask">{AskLabel}</a>
+                                </li>
+                                {/block:AskEnabled}
+                                {block:SubmissionsEnabled}
+                                <li>
+                                    
+                                    <a href="/submit">{SubmitLabel}</a>
+                                </li>
+                                {/block:SubmissionsEnabled}
+                                {block:IfBehanceURL}
+                                <li>
+                                    <a href="{text:Behance URL}">Behance</a>
+                                </li>
+                                {/block:IfBehanceURL} 
+                                {block:IfFoursquareURL}
+                                <li>
+                                    <a href="{text:Foursquare URL}">Foursquare</a>
+                                </li>
+                                {/block:IfFoursquareURL}
+                                {block:IfWeiboURL}
+                                <li>
+                                    <a href="{text:Weibo URL}">Weibo</a>
+                                </li>
+                                {/block:IfWeiboURL}
+                                {block:IfSkypeURL}
+                                <li>
+                                    <a href="{text:Skype URL}">Skype</a>
+                                </li>
+                                {/block:IfSkypeURL}
+                                {block:IfSpotifyURL}
+                                <li>
+                                    <a href="{text:Spotify URL}">Spotify</a>
+                                </li>
+                                {/block:IfSpotifyURL}
+                                {block:IfSwarmURL}
+                                <li>
+                                    <a href="{text:Swarm URL}">Swarm</a>
+                                </li>
+                                {/block:IfSwarmURL}
+                                {block:IfVineURL}
+                                <li>
+                                    <a href="{text:Vine URL}">Vine</a>
+                                </li>
+                                {/block:IfVineURL}
+                                {block:IfVKURL}
+                                <li>
+                                    <a href="{text:VK URL}">VK</a>
+                                </li>
+                                {/block:IfVKURL}
+                                {block:IfDribbbleURL}
+                                <li>
+                                    <a href="{text:Dribbble URL}">Dribbble</a>
+                                </li>
+                                {/block:IfDribbbleURL}
+                                {block:IfFacebookURL}
+                                <li>
+                                    <a href="{text:Facebook URL}">Facebook</a>
+                                </li>
+                                {/block:IfFacebookURL}
+                                {block:IfGithubURL}
+                                <li>
+                                    <a href="{text:Github URL}">Github</a>
+                                </li>
+                                {/block:IfGithubURL}
+                                {block:IfInstagramURL}
+                                <li>
+                                    <a href="{text:Instagram URL}">Instagram</a>
+                                </li>
+                                {/block:IfInstagramURL} 
+                                {block:IfLinkedInURL}
+                                <li>
+                                    <a href="{text:LinkedIn URL}">Linkedin</a>
+                                </li>
+                                {/block:IfLinkedInURL}
+                                {block:IfPinterestURL}
+                                <li>
+                                    <a href="{text:Pinterest URL}">Pinterest</a>
+                                </li>
+                                {/block:IfPinterestURL}
+                                {block:IfRdioURL}
+                                <li>
+                                    <a href="{text:Rdio URL}">Rdio</a>
+                                </li>
+                                {/block:IfRdioURL}
+                                {block:IfTumblrURL}
+                                <li>
+                                    <a href="{text:Tumblr URL}">Tumblr</a>
+                                </li>
+                                {/block:IfTumblrURL}
+                                {block:IfTwitterURL}
+                                <li>
+                                    <a href="{text:Twitter URL}">Twitter</a>
+                                </li>
+                                {/block:IfTwitterURL}
+                                {block:IfVimeoURL}
+                                <li>
+                                    <a href="{text:Vimeo URL}">Vimeo</a>
+                                </li>
+                                {/block:IfVimeoURL}
+                                {block:IfYoutubeURL}
+                                <li>
+                                    <a href="{text:Youtube URL}">Youtube</a>
+                                </li>
+                                {/block:IfYoutubeURL}
+                                {block:IfShowSearch}
+                                <li>
+                                    <form class="search" action="/search" method="get">
+                                        <input type="text" name="q" value="{SearchQuery}" placeholder="Search" />
+                                        <input type="submit" value="{lang:Search}" />
+                                    </form>                                    
+                                </li>
+                                {/block:IfShowSearch}
+                            </ul>
+                        </nav>                        
+                    </div><!--// header__right -->
+                </header>                
+            
+                <section id="content" class="content">
+                    <div class="{block:IndexPage}scene_element{/block:IndexPage}">
+                        <section id="posts" class="posts {TagsAsClasses}">
+                            {block:TagPage}
+                            <div class="tag-heading"><h2>{Tag}</h2></div>
+                            {/block:TagPage}
+                            
+                            {block:SearchPage}
+                            <article class="alert {block:SearchResults}found-results{/block:SearchResults} {block:NoSearchResults}no-results{/block:NoSearchResults}">
+                                {block:SearchResults}
+                                <p class="results">{lang:Search results for SearchQuery 2}</p>
+                                {/block:SearchResults}
+                
+                                {block:NoSearchResults}
+                                <p class="results">{lang:Sorry no results for SearchQuery 2}</p>
+                                {/block:NoSearchResults}
+                            </article>
+                            {/block:SearchPage}
+                            
+                            {block:IndexPage}
+                            {block:Posts}
+                            <article id="{PostID}" class="post {PostType} {TagsAsClasses}">
+                                <!-- Panorama Block Starts -->
+                                {block:Panorama}
+                                {LinkOpenTag}
+                                <img src="{PhotoURL-Panorama}" alt="{PhotoAlt}" class="fit" />
+                                {LinkCloseTag}
+                                {block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
+                                {/block:Panorama}
+                                <!-- Panorama Block Ends -->
+            
+                                <!-- Text Block Starts -->
+                                {block:Text}
+                                <h2 class="post__title"><a href="{Permalink}">{Title}</a></h2>
+                                {Body}
+                                {/block:Text}
+                                <!-- Text Block Ends -->
+            
+                                <!-- Photo Block Stars -->
+                                {block:Photo}
+                                {LinkOpenTag}
+                                <img src="{PhotoURL-HighRes}" alt="{PhotoAlt}" class="fit" />
+                                
+                                {LinkCloseTag}
+                                {block:Caption}<div class="caption"{Caption}</div>{/block:Caption}
+                                {/block:Photo}
+                                <!-- Photo Block Ends -->
+            
+                                <!-- Photoset Block Starts-->
+                                {block:Photoset}
+                                
+                                <div class="photo-slideshow" id="photoset_{PostID}" data-layout="{PhotosetLayout}">
+                                
+                                  {block:Photos}
+                                    <div class="photo-data">
+                                      <div class="pxu-photo">
+                                        <a class="tumblr-box" rel="post-{PostID}" href="{PhotoURL-HighRes}">
+                                            <img alt="{PhotoAlt}" src="{PhotoURL-HighRes}" width="{PhotoWidth-HighRes}" height="{PhotoHeight-HighRes}" data-highres="{PhotoURL-HighRes}" data-width="{PhotoWidth-HighRes}" data-height="{PhotoHeight-HighRes}">
+                                        </a>
+                                      </div>
+                                    </div>
+                                  {/block:Photos}
+                                
+                                </div><!-- close SLIDESHOW -->
+                                
+                                {block:Caption}
+                                    <div class="caption">{Caption}</div>
+                                {/block:Caption}
+                                
+                                {/block:Photoset}
+                                <!-- Photoset Block Ends-->
+            
+                                <!-- Quote Block Starts-->
+                                {block:Quote}
+                                <div class="post__quote">
+                                &ldquo;{Quote}&rdquo;
+                                </div>
+                                {block:Source}<div class="source">— {Source}</div>{/block:Source}
+                                {/block:Quote}
+                                <!-- Quote Block Ends-->
+            
+                                <!-- Link Block Starts-->
+                                {block:Link}
+                                {block:Thumbnail}
+                                    <img src="{Thumbnail}" alt="{PhotoAlt}" class="fit" />
+                                {/block:Thumbnail}
+                                    <h2 class="post__title">
+                                        <a href="{URL}" {Target}>{Name}</a>
+                                    </h2>
+                                    {block:Description}
+                                        <div class="description">{Description}</div>
+                                    {/block:Description}
+                                {/block:Link}
+                                <!-- Link Block Ends-->
+            
+                                <!-- Chat Block Starts-->
+                                {block:Chat}
+            
+                                {block:Title}
+                                <h2 class="post__title"><a href="{Permalink}">{Title}</a></h2>
+                                {/block:Title}
+            
+                                <ul class="chat">
+                                {block:Lines}
+                                  <li class="{Alt} user_{UserNumber}">
+                                    {block:Label}<span class="label">{Label}</span>{/block:Label} {Line}
+                                  </li>
+                                {/block:Lines}
+                                </ul>
+                                {/block:Chat}
+                                <!-- Chat Block Ends-->
+            
+                                <!-- Video Block Starts-->
+                                {block:Video}
+                                <div class="js-fitvids">
+                                {VideoEmbed-500}
+                                </div>
+                                {block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
+                                {/block:Video}
+                                <!-- Video Block Ends-->
+            
+                                <!-- Audio Block Starts-->
+                                {block:Audio}
+                                {block:AudioEmbed}
+                                <div class="js-fitvids">
+                                {AudioEmbed-500}
+                                </div>
+                                {/block:AudioEmbed}
+                                {block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
+                                {/block:Audio}
+                                <!-- Audio Block Ends-->
+            
+            
+                                <!-- Answer Block Starts-->
+                                {block:Answer}
+                                <div class="asker">
+                                    <div class="asker-thumb"><img src="{AskerPortraitURL-40}" class="fit"></div>
+                                    <div class="asker-name">{Asker}</div>
+                                </div>
+                                <div>
+                                    <div class="question">{Question}</div>
+                                </div>
+                                {block:Answerer}
+                                <div class="answerer">
+                                    <div class="answerer-thumb"><img src="{AnswererPortraitURL-40}" class="fit"></div>
+                                    <div class="answerer-name">{Answerer}</div>
+                                </div>
+                                <div>
+                                    <div class="answer-text">{Answer}</div>
+                                </div>
+                                {/block:Answerer}
+                                 <div class="replies">
+                                    {Replies}
+                                </div>
+                                {/block:Answer}
+                                  <!-- Answer Block Ends-->
+    
+                                    <!-- post footer -->
+                                <footer id="{PostID}-hide" class="post__footer">
+                               
+                                    <section class="post-controls">
+                                        <ul class="controls-wrapper">
+                                            {block:IfShowLike}
+                                            <li class="custom-like-button">
+                                                <div class="button custom-like-button">
+                                                    {LikeButton}
+                                                    <span class="like_text ">
+                                                      Like
+                                                    </span>
+                                                    <span class="like_text like_text--liked ">
+                                                      Liked
+                                                    </span>
+                                                </div>
+                                            </li>
+                                            {/block:IfShowLike}
+                                            {block:IfShowReblog}
+                                            <li class="">
+                                                <a class="button reblog-button " href="{ReblogURL}" target="_blank">Reblog</a>
+                                            </li>
+                                            {/block:IfShowReblog}
+                                            {block:IfShowDate}
+                                            <li> 
+                                                <a class="time-ago " href="{Permalink}">{TimeAgo}</a>
+                                            </li>
+                                            {/block:IfShowDate}                                            
+                                            <!--post notes-->
+                                            {block:IfShowNotes}
+                                            {block:NoteCount}
+                                            <li>
+                                                <a class="note-count " href="{Permalink}#notes">{NoteCountWithLabel}</a>
+                                            </li>
+                                            {/block:NoteCount}
+                                            {/block:IfShowNotes}
+                                            {block:IfShowTags}
+                                            {block:HasTags}
+                                            {block:Tags}
+                                            <li class="inline-block">
+                                                <a class="" href="{TagURL}">#{Tag}</a>
+                                            </li>      
+                                            {/block:Tags}
+                                            {/block:HasTags}
+                                            {/block:IfShowTags}
+                                        </ul>
+                                    </section>
+                                </footer>
+                                <!--// post footer -->   
+                                    
+                            </article>
+                                  
+                            {/block:Posts} 
+                            {/block:IndexPage}
+                            <!-- end of the Posts Block -->
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                            {block:PermalinkPage}
+                            <div class="permalink">
+                            {block:Posts} 
+                                <article id="{PostID}" class="post {PostType} {TagsAsClasses}">
+                                <!-- Panorama Block Starts -->
+                                {block:Panorama} 
+                                    {LinkOpenTag} 
+                                    <img src="{PhotoURL-Panorama}" alt="{PhotoAlt}" class="fit" />{LinkCloseTag}
+                                    {block:Caption}
+                                    <div class="caption">{Caption}</div>
+                                    {/block:Caption} 
+                                {/block:Panorama}
+                                <!-- Panorama Block Ends -->
+            
+                                <!-- Text Block Starts -->
+                                {block:Text}
+                                    <h2 class="post__title">{Title}</h2>
+                                    {Body}
+                                {/block:Text}
+                                <!-- Text Block Ends -->
+            
+                                <!-- Photo Block Stars -->
+                                {block:Photo}
+                                    {LinkOpenTag}
+                                    <img src="{PhotoURL-HighRes}" alt="{PhotoAlt}" class="fit" />
+                                    {LinkCloseTag}
+                                    {block:Caption}
+                                    <div class="caption"{Caption}</div>
+                                    {/block:Caption}
+                                {/block:Photo}
+                                <!-- Photo Block Ends -->
+            
+                                <!-- Photoset Block Starts-->
+                                {block:Photoset}
+                                
+                                <div class="photo-slideshow" id="photoset_{PostID}" data-layout="{PhotosetLayout}">
+                                
+                                  {block:Photos}
+                                    <div class="photo-data">
+                                      <div class="pxu-photo">
+                                        <a class="tumblr-box" rel="post-{PostID}" href="{PhotoURL-HighRes}">
+                                            <img alt="{PhotoAlt}" src="{PhotoURL-HighRes}" width="{PhotoWidth-HighRes}" height="{PhotoHeight-HighRes}" data-highres="{PhotoURL-HighRes}" data-width="{PhotoWidth-HighRes}" data-height="{PhotoHeight-HighRes}">
+                                        </a>
+                                      </div>
+                                    </div>
+                                  {/block:Photos}
+                                
+                                </div><!-- close SLIDESHOW -->
+                                
+                                {block:Caption}
+                                    <div class="caption">{Caption}</div>
+                                {/block:Caption}
+                                
+                                {/block:Photoset}
+                                <!-- Photoset Block Ends-->
+            
+                                <!-- Quote Block Starts-->
+                                {block:Quote}
+                                <p class="post__quote">
+                                &ldquo;{Quote}&rdquo;
+                                </p>
+                                {block:Source}
+                                <div class="source">— {Source}</div>
+                                {/block:Source}
+                                {/block:Quote}
+                                <!-- Quote Block Ends-->
+            
+                                <!-- Link Block Starts-->
+                                {block:Link}
+                                    {block:Thumbnail}
+                                    <img src="{Thumbnail}" alt="{PhotoAlt}" class="fit" />
+                                    {/block:Thumbnail}
+                                    <h2 class="post__title">
+                                        <a href="{URL}" {Target}>{Name}</a>
+                                    </h2>
+                                    {block:Description}
+                                    <div class="description">{Description}</div>
+                                    {/block:Description}
+                                {/block:Link}
+                                <!-- Link Block Ends-->
+            
+                                <!-- Chat Block Starts-->
+                                {block:Chat}
+                                    {block:Title}
+                                    <h2 class="post__title">{Title}</h2>
+                                    {/block:Title} 
+                                    <ul class="chat">
+                                    {block:Lines}
+                                        <li class="{Alt} user_{UserNumber}">
+                                            {block:Label}<span class="label">{Label}</span>{/block:Label} {Line}
+                                        </li>
+                                    {/block:Lines}
+                                    </ul>
+                                {/block:Chat}
+                                <!-- Chat Block Ends-->
+            
+                                <!-- Video Block Starts-->
+                                {block:Video} 
+                                <div class="js-fitvids">
+                                {VideoEmbed-500}
+                                </div>
+                                {block:Caption}
+                                <div class="caption">{Caption}</div>
+                                {/block:Caption}
+                                {/block:Video} 
+                                <!-- Video Block Ends-->
+            
+                                <!-- Audio Block Starts-->
+                                {block:Audio}
+                                    {block:AudioEmbed}
+                                    <div class="js-fitvids">
+                                    {AudioEmbed-500}
+                                    </div>
+                                    {/block:AudioEmbed}
+                                    {block:Caption}<div class="caption"{Caption}</div>
+                                    {/block:Caption}
+                                {/block:Audio}
+                                <!-- Audio Block Ends-->
+            
+            
+                                <!-- Answer Block Starts-->
+                                {block:Answer}
+                                    <div class="asker">
+                                        <div class="asker-thumb"><img src="{AskerPortraitURL-40}" class="fit"></div>
+                                        <div class="asker-name">{Asker}</div>
+                                    </div>
+                                    <div>
+                                        <div class="question">{Question}</div>
+                                    </div>
+                                {block:Answerer}
+                                    <div class="answerer">
+                                        <div class="answerer-thumb"><img src="{AnswererPortraitURL-40}" class="fit"></div>
+                                        <div class="answerer-name">{Answerer}</div>
+                                    </div>
+                                    <div>
+                                        <div class="answer-text">{Answer}</div>
+                                    </div>
+                                    {/block:Answerer}
+                                    <div class="replies">
+                                        {Replies}
+                                    </div>
+                                {/block:Answer} 
+                                <!-- Answer Block Ends-->
+                                           
+                                    
+                                    <!-- post footer -->
+                                    <footer id="{PostID}-hide" class="post__footer">
+                                   
+                                        <section class="post-controls">
+                                            <ul class="controls-wrapper">
+                                                {block:IfShowLike}
+                                                <li class="custom-like-button">
+                                                    <div class="button custom-like-button">
+                                                        {LikeButton}
+                                                        <span class="like_text ">
+                                                          Like
+                                                        </span>
+                                                        <span class="like_text like_text--liked ">
+                                                          Liked
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                                {/block:IfShowLike}
+                                                {block:IfShowReblog}
+                                                <li>
+                                                    <a class="button reblog-button " href="{ReblogURL}" target="_blank">Reblog</a>
+                                                </li>
+                                                {/block:IfShowReblog}
+                                                {block:IfShowDate}
+                                                <li> 
+                                                    <a class="time-ago " href="{Permalink}">{TimeAgo}</a>
+                                                </li>
+                                                {/block:IfShowDate}     
+                                                {block:IfShowNotes}
+                                                {block:NoteCount} 
+                                                <li>
+                                                    <a id="notes-link" class="note-count " href="#">{NoteCountWithLabel}</a>
+                                                </li>
+                                                {/block:NoteCount} 
+                                                {/block:IfShowNotes}
+                                                {block:IfShowTags}
+                                                {block:HasTags}
+                                                {block:Tags}
+                                                <li class="inline-block">
+                                                    <a class="" href="{TagURL}">#{Tag}</a>
+                                                </li>      
+                                                {/block:Tags}
+                                                {/block:HasTags}
+                                                {/block:IfShowTags}
+                                            </ul>
+                                        </section>
+                                    </footer>
+                                    <!--// post footer -->    
+                                </article>
+            
+                                {block:PostNotes}
+                                <div id="notes">
+                                    {PostNotes-16}
+                                </div>
+                                {/block:PostNotes}
+                                
+                                <a href="/" class="back__button">← {lang:Back}</a>
+                            {/block:Posts}
+                            </div><!--.permalink-->
+                            {/block:PermalinkPage}
+                        </section><!--end of posts section-->
+                        
+                        {block:IndexPage}
+                        <footer id="sitefooter" class="sitefooter">
+                            
+                            <div id ="pagination" class="pagination">
+                                {block:PreviousPage}
+                                <a id="pagination-previous" class="pagination-previous" href="{PreviousPage}">{lang:Loading}</a>
+                                {/block:PreviousPage}
+                
+                                {block:NextPage}
+                                <a id="pagination-next" class="pagination-next" href="{NextPage}">{lang:Loading}</a>
+                                {/block:NextPage}
+                            </div>
+                            
+                        </footer>
+                        {/block:IndexPage}
+                    </div><!--// scene element -->
+                    <span class="bottom__copyright">
+                        Theme by <a href="http://otherthemes.com">Other</a>
+                    </span>                     
+                </section>
+            </div><!--// end container -->
+        </div><!--// end wrapper -->
+    </div><!-- end js-smooth -->
+    
+    
+    <script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
+    <script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
+    <script src="http://static.tumblr.com/hpghjri/co2nfnr1j/infinitescroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fitvids/1.1.0/jquery.fitvids.min.js"></script>
+    
+    <script src="http://static.tumblr.com/hugxd2w/nyZmm78dc/pxuphotoset.min.js"></script>
+    <script src="http://static.tumblr.com/nxwjyyg/oKIoavtne/jquery.cookie.js"></script>
+    <script src="http://static.tumblr.com/nxwjyyg/6Sxomjgef/script.js"></script>
+</body>
+</html>
