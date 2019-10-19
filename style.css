@@ -1,0 +1,102 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000000;
+}
+
+header {
+  display: flex;
+  height: 100px;
+  margin: auto;
+}
+
+.desktop-header {
+  width: 70%;
+  display: flex;
+  margin: auto;
+  align-items: center;
+}
+
+.logo-container, .nav-links, .langs, .right-container {
+  display: flex;
+  flex: 1;
+}
+
+.logo-container {
+    justify-content: flex-start;
+}
+
+.nav-links {
+  list-style-type: none;
+}
+
+.nav-link {
+  color: #ffffff;
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  text-decoration: none;
+  margin: 30px;
+}
+
+.langs {
+  list-style-type: none;
+  justify-content: flex-end;
+}
+
+.lang {
+  color: #ffffff;
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.tablet-header {
+  flex: 1;
+  margin: auto;
+  align-items: center;
+  display: none;
+}
+
+.tablet-left {
+  display: flex;
+  flex: 1;
+}
+
+.tablet-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.menu-icon {
+  height: 24px;
+  width: 24px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+/* Resposive Design */
+
+@media screen and (max-width:959px) {
+  .desktop-header {
+    display: none;
+  }
+
+  .tablet-header {
+    display: flex;
+  }
+}
