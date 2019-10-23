@@ -1,0 +1,145 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  vertical-align: baseline;
+  font-size: 100%;
+}
+
+/* Header */
+
+header {
+  -webkit-font-smoothing: antialiased;
+  display: flex;
+  height: 100px;
+  margin: auto;
+  z-index: 1;
+}
+
+.desktop-header {
+  width: 60%;
+  display: flex;
+  margin: auto;
+  align-items: center;
+}
+
+.logo-container, .nav-links, .langs, .right-container {
+  display: flex;
+  flex: 1;
+}
+
+.logo-container {
+    justify-content: flex-start;
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+}
+
+.nav-links {
+  list-style-type: none;
+}
+.nav-links li {
+  padding: 0 30px;
+}
+
+.nav-link {
+  color: #ffffff;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.langs {
+  list-style-type: none;
+  justify-content: flex-end;
+}
+
+.langs li {
+  padding-left: 30px;
+}
+
+.lang {
+  color: #ffffff;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.tablet-header {
+  flex: 1;
+  margin: auto;
+  align-items: center;
+  display: none;
+}
+
+.tablet-left {
+  display: flex;
+  flex: 1;
+}
+
+.tablet-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  background: #000000;
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+}
+
+/* Header resposive design */
+
+@media screen and (max-width:959px) {
+  .desktop-header {
+    display: none;
+  }
+
+  .tablet-header {
+    display: flex;
+  }
+}
+
+/* Body */
+
+body {
+  width: 100%;
+  background-color: #000000;
+  font-family: 'Poppins', sans-serif;
+}
+
+.asd {
+  top: 0;
+  border-left: 1px solid #111111;
+  position: absolute;
+  left: 25%;
+  margin-left: -0.5px;
+  height: 100%;
+  z-index: -1;
+}
+
+.asd2 {
+  top: 0;
+  border-left: 1px solid #111111;
+  position: absolute;
+  left: 50%;
+  margin-left: -0.5px;
+  height: 100%;
+  z-index: -1;
+}
+
+.asd3 {
+  top: 0;
+  border-left: 1px solid #111111;
+  position: absolute;
+  left: 75%;
+  margin-left: -0.5px;
+  height: 100%;
+  z-index: -1;
+}
