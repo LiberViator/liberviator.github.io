@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>Logo</title>
-    <desc></desc>
-    <g id="Logo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <rect id="Rectangle" stroke="#FFFFFF" stroke-width="2" x="1" y="1" width="48" height="48"></rect>
-        <polygon id="Path" fill="#FFFFFF" transform="translate(25.000000, 25.000000) rotate(-360.000000) translate(-25.000000, -25.000000) " points="11 9 11 34.0005352 18 41 18 21.16 32 41 39 41 39 16.001295 32 9 32 28.84 18 9"></polygon>
-    </g>
-</svg>
