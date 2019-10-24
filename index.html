@@ -4,16 +4,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Chrome, Firefox OS and Opera -->
-  <meta name="theme-color" content="#4285f4">
-  <!-- Windows Phone -->
-  <meta name="msapplication-navbutton-color" content="#4285f4">
-  <!-- iOS Safari -->
-  <meta name="apple-mobile-web-app-status-bar-style" content="#4285f4">
+  <meta name="theme-color" content="#000000"> <!-- Chrome, Firefox OS and Opera -->
+  <meta name="msapplication-navbutton-color" content="#000000"> <!-- Windows Phone -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000000"> <!-- iOS Safari -->
   <title>Portfolio</title>
-  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles/style.css"/>
-  <link rel="stylesheet" href="./styles/menu.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/style.css" />
+  <script type="text/javascript" src="./scripts/menu.js"></script>
 </head>
 
 <body>
@@ -37,12 +34,9 @@
       </div>
     </div>
     <div class="tablet-header">
-      <div class="tablet-left">
-      </div>
-      <div class="tablet-logo-container">
-        <img class="logo" src="./img/logo.svg" alt="logo" />
-      </div>
       <div id="wrapper">
+        <img id="logo-light" src="./img/logo.svg" alt="logo"/>
+        <img id="logo-dark" src="./img/logo-dark.svg" alt="logo"/>
         <div class="menu" onclick="show()">
           <span id="one"></span>
           <span id="two"></span>
@@ -57,22 +51,8 @@
     </div>
   </header>
   <main>
-    <div class="backgroundd">
-      <div class="asd">
-      </div>
-      <div class="asd2">
-      </div>
-      <div class="asd3">
-      </div>
-  </div>
   </main>
 
 </body>
 
 </html>
-
-<script>
-function show() {
-  document.getElementById('wrapper').classList.toggle('active');
-}
-</script>
