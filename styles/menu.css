@@ -23,8 +23,7 @@
   -ms-user-select: none;
   /* Internet Explorer/Edge */
   user-select: none;
-  /* Non-prefixed version, currently
-                                  supported by Chrome, Opera and Firefox */
+  /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
 }
 
 .menu span {
@@ -38,16 +37,17 @@
 }
 
 .menu-links {
-  display: none;
+  display: flex;
   flex-flow: column;
   position: absolute;
   width: 100%;
   height: 100%;
-  background: #ffffff;
   top: 0;
+  background: #ffffff;
   list-style-type: none;
   align-items: center;
   justify-content: center;
+
 }
 
 .menu-links li {
@@ -58,10 +58,15 @@
 #wrapper.active .menu {
   display: flex;
   position: absolute;
+  height: 24px;
+  width: 24px;
+  align-items: center;
+  justify-content: center;
 }
 
 #wrapper.active .menu span {
   background: #000000;
+  margin: 0;
 }
 
 /* Menu burger animation */
@@ -81,12 +86,14 @@
 
 #wrapper.active .menu-links {
   display: flex;
+  flex: auto;
 }
+
 
 .menu-link {
   color: #000000;
-  font-family: 'Poppins';
-  font-weight: 600;
-  font-size: 36px;
+  font-family: 'Work Sans';
+  font-weight: 500;
+  font-size: 10vw;
   text-decoration: none;
 }
