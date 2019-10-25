@@ -9,11 +9,18 @@
 }
 
 /* Header */
+
 header {
   display: flex;
   height: 100px;
   margin: auto;
   z-index: 1;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
 }
 
 .desktop-header {
@@ -23,12 +30,14 @@ header {
   align-items: center;
 }
 
-.logo-container, .nav-links, .langs, .right-container {
+.right-container {
   display: flex;
   flex: 1;
 }
 
 .logo-container {
+  display: flex;
+  flex: 1;
   justify-content: flex-start;
   -webkit-user-select: none;
   /* Chrome all / Safari all */
@@ -43,11 +52,15 @@ header {
 }
 
 .nav-links {
+  display: flex;
+  flex: 1;
   list-style-type: none;
   justify-content: center;
 }
 
 .nav-links li {
+  display: flex;
+  flex: 1;
   /* flex: auto;
   text-align: center; */
   padding: 0 30px;
@@ -63,6 +76,8 @@ header {
 }
 
 .langs {
+  display: flex;
+  flex: 1;
   list-style-type: none;
   justify-content: flex-end;
 }
@@ -90,14 +105,12 @@ header {
 #logo-light {
   position: absolute;
   z-index: 1;
-  transition: .3s;
 }
 
 #logo-dark {
   position: absolute;
   opacity: 0;
   z-index: 1;
-  transition: .3s;
 }
 
 #wrapper {
