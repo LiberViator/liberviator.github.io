@@ -1,11 +1,12 @@
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   border: none;
   outline: none;
-  vertical-align: baseline;
-  font-size: 100%;
+}
+::selection {
+  opacity: 0;
 }
 
 /* Header */
@@ -15,12 +16,6 @@ header {
   height: 100px;
   margin: auto;
   z-index: 1;
-  -webkit-touch-callout: none; /* iOS Safari */
-  -webkit-user-select: none; /* Safari */
-  -khtml-user-select: none; /* Konqueror HTML */
-  -moz-user-select: none; /* Old versions of Firefox */
-  -ms-user-select: none; /* Internet Explorer/Edge */
-  user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
 }
 
 .desktop-header {
@@ -63,7 +58,7 @@ header {
   flex: 1;
   /* flex: auto;
   text-align: center; */
-  padding: 0 30px;
+  margin: 0 30px;
 }
 
 .nav-link {
@@ -83,7 +78,7 @@ header {
 }
 
 .langs li {
-  padding-left: 30px;
+  margin-left: 30px;
 }
 
 .lang {
@@ -169,6 +164,7 @@ header {
   align-self: center;
 }
 
+
 #wrapper.active .menu {
   display: flex;
   position: absolute;
@@ -184,6 +180,7 @@ header {
 }
 
 /* Menu burger animation */
+
 #wrapper.active .menu #one {
   position: absolute;
   transform: rotate(45deg);
@@ -226,6 +223,8 @@ body {
   font-family: 'Work Sans', sans-serif;
 }
 
+
+
 @media screen and (max-width:959px) {
   .desktop-header {
     display: none;
@@ -233,5 +232,15 @@ body {
 
   .tablet-header {
     display: flex;
+  }
+
+  @media only screen and (orientation: landscape) {
+  #wrapper{
+    justify-content: flex-start;
+  }
+  #logo-light, #logo-dark {
+    margin-left: 30px;
+    /* visibility: hidden; */
+  }
   }
 }
