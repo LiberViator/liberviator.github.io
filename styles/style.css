@@ -5,12 +5,8 @@
   border: none;
   outline: none;
 }
-::selection {
-  opacity: 0;
-}
 
 /* Header */
-
 header {
   display: flex;
   height: 100px;
@@ -164,7 +160,6 @@ header {
   align-self: center;
 }
 
-
 #wrapper.active .menu {
   display: flex;
   position: absolute;
@@ -180,7 +175,6 @@ header {
 }
 
 /* Menu burger animation */
-
 #wrapper.active .menu #one {
   position: absolute;
   transform: rotate(45deg);
@@ -223,8 +217,6 @@ body {
   font-family: 'Work Sans', sans-serif;
 }
 
-
-
 @media screen and (max-width:959px) {
   .desktop-header {
     display: none;
@@ -233,14 +225,23 @@ body {
   .tablet-header {
     display: flex;
   }
+}
 
-  @media only screen and (orientation: landscape) {
-  #wrapper{
+@media screen and (max-width:959px) and (orientation: landscape) {
+  #wrapper {
     justify-content: flex-start;
   }
+
   #logo-light, #logo-dark {
     margin-left: 30px;
     /* visibility: hidden; */
   }
-  }
+}
+
+.bebe {
+  color: #ffffff;
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
 }
