@@ -2,22 +2,24 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
+  <title>Portfolio</title>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#000000"> <!-- Chrome, Firefox OS and Opera -->
   <meta name="msapplication-navbutton-color" content="#000000"> <!-- Windows Phone -->
   <meta name="apple-mobile-web-app-status-bar-style" content="#000000"> <!-- iOS Safari -->
-  <title>Portfolio</title>
   <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles/style.css" />
-  <script type="text/javascript" src="./scripts/menu.js"></script>
+  <link rel="stylesheet" href="styles/style.css" />
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src=”scripts/translate.js”> </script>
+  <script src="scripts/menu.js"></script>
 </head>
 
 <body>
   <header>
     <div class="desktop-header">
       <div class="logo-container">
-        <img class="logo" src="./img/logo-light.svg" />
+        <img class="logo" src="./img/logo-light.svg"/>
       </div>
       <nav class="nav-container">
         <ul class="nav-links">
@@ -35,8 +37,8 @@
     </div>
     <div class="tablet-header">
       <div id="wrapper">
-        <img id="logo-light" src="./img/logo-light.svg" alt="logo"/>
-        <img id="logo-dark" src="./img/logo-dark.svg" alt="logo"/>
+        <img id="logo-light" class="logo" src="./img/logo-light.svg" alt="logo" />
+        <img id="logo-dark" class="logo" src="./img/logo-dark.svg" alt="logo" />
         <div class="menu" onclick="show()">
           <span id="one"></span>
           <span id="two"></span>
@@ -51,6 +53,12 @@
     </div>
   </header>
   <main>
+    <select id="lang">
+    <option>English</option>
+    <option>Russian</option>
+</select>
+<span class="bebe" data-translate="_hello">Hello</span>
+<span class="bebe" data-translate="_january">January</span>
   </main>
 
 </body>
