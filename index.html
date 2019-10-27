@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <title>Portfolio</title>
@@ -8,57 +8,53 @@
   <meta name="theme-color" content="#000000"> <!-- Chrome, Firefox OS and Opera -->
   <meta name="msapplication-navbutton-color" content="#000000"> <!-- Windows Phone -->
   <meta name="apple-mobile-web-app-status-bar-style" content="#000000"> <!-- iOS Safari -->
-  <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles/style.css" />
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src=”scripts/translate.js”></script>
-  <script src="scripts/menu.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <header>
-    <div class="desktop-header">
+    <div id="desktop-wrapper">
       <div class="logo-container">
-        <img class="logo" src="./img/logo-light.svg"/>
+        <img class="logo" src="./img/logo-light.svg" />
       </div>
       <nav class="nav-container">
         <ul class="nav-links">
-          <li><a class="nav-link" href="#">WORK</a></li>
-          <li><a class="nav-link" href="#">ABOUT</a></li>
-          <li><a class="nav-link" href="#">CONTACT</a></li>
+          <li><a class="nav-link" data-translate="work" href="#">WORK</a></li>
+          <li id="middle"><a class="nav-link" data-translate="about" href="#">ABOUT</a></li>
+          <li><a class="nav-link" data-translate="contact" href="#">CONTACT</a></li>
         </ul>
       </nav>
       <div class="right-container">
         <ul class="langs">
-          <li><a class="lang" href="#pl">PL</a></li>
-          <li><a class="lang" href="#en">EN</a></li>
+          <li><a class="lang" href="/pl/">PL</a></li>
+          <li><a class="lang" href="/en/">EN</a></li>
         </ul>
       </div>
     </div>
-    <div class="tablet-header">
-      <div id="wrapper">
-        <img id="logo-light" class="logo" src="./img/logo-light.svg" alt="logo" />
-        <img id="logo-dark" class="logo" src="./img/logo-dark.svg" alt="logo" />
-        <div class="menu" onclick="show()">
-          <span id="one"></span>
-          <span id="two"></span>
-          <span id="three"></span>
-        </div>
-        <ul class="menu-links">
-          <li><a class="menu-link" href="#">WORK</a></li>
-          <li><a class="menu-link" href="#">ABOUT</a></li>
-          <li><a class="menu-link" href="#">CONTACT</a></li>
-        </ul>
+    <div id="tablet-wrapper">
+      <img id="logo-light" class="logo" src="./img/logo-light.svg" alt="logo" />
+      <img id="logo-dark" class="logo" src="./img/logo-dark.svg" alt="logo" />
+      <div class="menu" onclick="show()">
+        <span id="one"></span>
+        <span id="two"></span>
+        <span id="three"></span>
       </div>
+      <ul class="menu-links">
+        <li><a class="menu-link" data-translate="work" href="#">WORK</a></li>
+        <li><a class="menu-link" data-translate="about" href="#">ABOUT</a></li>
+        <li><a class="menu-link" data-translate="contact" href="#">CONTACT</a></li>
+      </ul>
+      <script src="js/menu.js"></script>
     </div>
   </header>
   <main>
-    <select id="lang">
-    <option>English</option>
-    <option>Russian</option>
-</select>
-<span class="bebe" data-translate="_hello">Hello</span>
-<span class="bebe" data-translate="_january">January</span>
+    <!-- <select id="lang">
+      <option>English</option>
+      <option>Polish</option>
+      <script src="js/lang.js"></script>
+    </select> -->
   </main>
 
 </body>
