@@ -1,9 +1,21 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  border: none;
-  outline: none;
+  font-size: 100%;
+  font-smoothing: antialiased;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
+  -webkit-tap-highlight-color: transparent;
 }
 
 /* Header */
@@ -11,12 +23,13 @@ header {
   display: flex;
   height: 100px;
   margin: auto;
+  font-family: 'Work Sans', sans-serif;
   z-index: 1;
 }
 
-.desktop-header {
-  width: 60%;
+#desktop-wrapper {
   display: flex;
+  width: 60%;
   margin: auto;
   align-items: center;
 }
@@ -30,12 +43,6 @@ header {
   display: flex;
   flex: 1;
   justify-content: flex-start;
-  -webkit-user-select: none;
-  /* Chrome all / Safari all */
-  -moz-user-select: none;
-  /* Firefox all */
-  -ms-user-select: none;
-  /* IE 10+ */
 }
 
 .nav-container {
@@ -44,22 +51,21 @@ header {
 
 .nav-links {
   display: flex;
-  flex: 1;
   list-style-type: none;
   justify-content: center;
+  align-items: center;
 }
 
 .nav-links li {
-  display: flex;
-  flex: 1;
-  /* flex: auto;
-  text-align: center; */
-  margin: 0 30px;
+  text-align: center;
+}
+
+#middle {
+  margin: 0 50px;
 }
 
 .nav-link {
   color: #ffffff;
-  font-family: 'Work Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -79,18 +85,17 @@ header {
 
 .lang {
   color: #ffffff;
-  font-family: 'Work Sans';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   text-decoration: none;
 }
 
-.tablet-header {
-  flex: auto;
+#tablet-wrapper {
+  display: none;
   width: 100%;
   align-items: center;
-  display: none;
+  justify-content: center;
 }
 
 #logo-light {
@@ -104,13 +109,6 @@ header {
   z-index: 1;
 }
 
-#wrapper {
-  display: flex;
-  flex: auto;
-  align-items: center;
-  justify-content: center;
-}
-
 .menu {
   display: block;
   position: absolute;
@@ -118,18 +116,6 @@ header {
   right: 30px;
   z-index: 1;
   cursor: pointer;
-  -webkit-touch-callout: none;
-  /* iOS Safari */
-  -webkit-user-select: none;
-  /* Safari */
-  -khtml-user-select: none;
-  /* Konqueror HTML */
-  -moz-user-select: none;
-  /* Old versions of Firefox */
-  -ms-user-select: none;
-  /* Internet Explorer/Edge */
-  user-select: none;
-  /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
 }
 
 .menu span {
@@ -157,10 +143,9 @@ header {
 
 .menu-links li {
   padding: 10px 0;
-  align-self: center;
 }
 
-#wrapper.active .menu {
+#tablet-wrapper.active .menu {
   display: flex;
   position: absolute;
   height: 24px;
@@ -169,42 +154,41 @@ header {
   justify-content: center;
 }
 
-#wrapper.active .menu span {
+#tablet-wrapper.active .menu span {
   background: #000000;
   margin: 0;
 }
 
 /* Menu burger animation */
-#wrapper.active .menu #one {
+#tablet-wrapper.active .menu #one {
   position: absolute;
   transform: rotate(45deg);
 }
 
-#wrapper.active .menu #two {
+#tablet-wrapper.active .menu #two {
   opacity: 0;
 }
 
-#wrapper.active .menu #three {
+#tablet-wrapper.active .menu #three {
   position: absolute;
   transform: rotate(-45deg);
 }
 
-#wrapper.active .menu-links {
+#tablet-wrapper.active .menu-links {
   display: flex;
-  flex: auto;
+  flex: 1;
 }
 
-#wrapper.active #logo-light {
+#tablet-wrapper.active #logo-light {
   opacity: 0;
 }
 
-#wrapper.active #logo-dark {
+#tablet-wrapper.active #logo-dark {
   opacity: 1;
 }
 
 .menu-link {
   color: #000000;
-  font-family: 'Work Sans';
   font-weight: 500;
   font-size: 36px;
   text-decoration: none;
@@ -212,36 +196,29 @@ header {
 
 /* Body */
 body {
-  width: 100%;
   background-color: #000000;
   font-family: 'Work Sans', sans-serif;
 }
 
-@media screen and (max-width:959px) {
-  .desktop-header {
+@media screen and (max-width:1099px) {
+  #desktop-wrapper {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width:799px) {
+  #desktop-wrapper {
     display: none;
   }
 
-  .tablet-header {
+  #tablet-wrapper {
     display: flex;
   }
 }
 
-@media screen and (max-width:959px) and (orientation: landscape) {
-  #wrapper {
-    justify-content: flex-start;
-  }
-
+@media screen and (max-width:735px) and (orientation: landscape) {
   #logo-light, #logo-dark {
-    margin-left: 30px;
-    /* visibility: hidden; */
+    /* margin-left: 30px; */
+    visibility: hidden;
   }
-}
-
-.bebe {
-  color: #ffffff;
-  font-family: 'Work Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
 }
