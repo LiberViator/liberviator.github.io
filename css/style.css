@@ -125,7 +125,7 @@ header {
   background: #ffffff;
   backface-visibility: hidden;
   margin: 5px 0;
-  transition: .3s;
+  transition: .9s;
 }
 
 .menu-links {
@@ -167,6 +167,7 @@ header {
 
 #tablet-wrapper.active .menu #two {
   opacity: 0;
+  transition: 0;
 }
 
 #tablet-wrapper.active .menu #three {
@@ -189,7 +190,7 @@ header {
 
 .menu-link {
   color: #000000;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 36px;
   text-decoration: none;
 }
