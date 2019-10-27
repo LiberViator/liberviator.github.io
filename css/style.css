@@ -125,7 +125,7 @@ header {
   background: #ffffff;
   backface-visibility: hidden;
   margin: 5px 0;
-  transition: .9s;
+  transition: .3s;
 }
 
 .menu-links {
