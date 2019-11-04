@@ -8,7 +8,7 @@
   <meta name="theme-color" content="#000000"> <!-- Chrome, Firefox OS and Opera -->
   <meta name="msapplication-navbutton-color" content="#000000"> <!-- Windows Phone -->
   <meta name="apple-mobile-web-app-status-bar-style" content="#000000"> <!-- iOS Safari -->
-  <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 </head>
@@ -22,11 +22,11 @@
       <nav class="nav-container">
         <ul class="nav-links">
           <li><a class="nav-link" data-translate="work" href="#">WORK</a></li>
-          <li id="middle"><a class="nav-link" data-translate="about" href="#">ABOUT</a></li>
+          <li id="about"><a class="nav-link" data-translate="about" href="#">ABOUT</a></li>
           <li><a class="nav-link" data-translate="contact" href="#">CONTACT</a></li>
         </ul>
       </nav>
-      <div class="right-container">
+      <div class="lang-container">
         <ul class="langs">
           <li><a class="lang" href="/pl/">PL</a></li>
           <li><a class="lang" href="/en/">EN</a></li>
@@ -36,7 +36,7 @@
     <div id="tablet-wrapper">
       <img id="logo-light" class="logo" src="./img/logo-light.svg" alt="logo" />
       <img id="logo-dark" class="logo" src="./img/logo-dark.svg" alt="logo" />
-      <div class="menu" onclick="show()">
+      <div class="burger" onclick="show()">
         <span id="one"></span>
         <span id="two"></span>
         <span id="three"></span>
@@ -55,8 +55,18 @@
       <option>Polish</option>
       <script src="js/lang.js"></script>
     </select> -->
+    <div class="gallery">
+       <img src="./img/logo-light.svg" class="gallery-img" alt="Image 1">
+       <img src="./img/logo-light.svg" class="gallery-img" alt="Image 1">
+       <img src="./img/logo-light.svg" class="gallery-img" alt="Image 1">
+       <img src="./img/logo-light.svg" class="gallery-img" alt="Image 1">
+       <img src="./img/logo-light.svg" class="gallery-img" alt="Image 1">
+       <img src="./img/logo-light.svg" class="gallery-img" alt="Image 1">
+       <img src="./img/logo-light.svg" class="gallery-img" alt="Image 1">
+    </div>
   </main>
-
+  <div id="fade-left"></div>
+  <div id="fade-right"></div>
 </body>
 
 </html>
