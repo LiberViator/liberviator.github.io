@@ -70,8 +70,7 @@ img {
   -ms-user-select: none;
   user-select: none;
   z-index: 2;
-  white-space: nowrap;
-  outline: none;
+
   /* background-color: red; */
 }
 
