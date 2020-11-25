@@ -56,9 +56,6 @@ img {
 /* Chat Bubble Button */
 .bubble {
   text-decoration: none;
-  appearance: none;
-  -moz-appearance: none;
-  -webkit-appearance: none;
   font-family: 'Press Start 2P';
   align-items: center;
   font-size: 1em;
