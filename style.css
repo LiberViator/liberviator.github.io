@@ -66,11 +66,7 @@ img {
   position: relative;
   display: inherit;
   cursor: pointer;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+
   z-index: 2;
   white-space: nowrap;
 }
