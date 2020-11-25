@@ -51,6 +51,7 @@ img {
   min-height: 64px;
   max-width: 512px;
   max-height: 512px;
+  z-index: -1;
 }
 
 /* Chat Bubble Button */
@@ -80,7 +81,7 @@ img {
   transform: translateY(8px);
 }
 
-/* .bubble:hover {
+.bubble:hover {
   transform: translateY(2px);
 }
 
@@ -91,7 +92,7 @@ img {
 .bubble:hover::after, .bubble:hover::before {
   -webkit-box-shadow: 0 6px grey;
   box-shadow: 0 6px grey;
-} */
+}
 
 .bubble:active::after, .bubble:active::before {
   -webkit-box-shadow: 0 0 grey;
@@ -122,4 +123,25 @@ img {
   right: 8px;
   background: white;
   z-index: -1;
+}
+
+.pressed {
+display: inline-block;
+padding: 15px 25px;
+font-size: 24px;
+cursor: pointer;
+text-align: center;
+text-decoration: none;
+outline: none;
+color: #fff;
+background-color: #4CAF50;
+border: none;
+border-radius: 15px;
+box-shadow: 0 9px #999;
+}
+
+.pressed:active {
+background-color: #3e8e41;
+box-shadow: 0 5px #666;
+transform: translateY(4px);
 }
