@@ -55,7 +55,6 @@ img {
 
 /* Chat Bubble Button */
 .bubble {
-  -webkit-appearance: button;
   text-decoration: none;
   font-family: 'Press Start 2P';
   align-items: center;
@@ -77,24 +76,24 @@ img {
   margin-right: 8px;
 }
 
-.bubble:hover {
-  box-sizing: inherit;
+.bubble:active {
+  transform: translateY(8px);
+}
+
+/* .bubble:hover {
   transform: translateY(2px);
 }
 
 .bubble:hover:active, .bubble:active {
-  box-sizing: inherit;
   transform: translateY(8px);
 }
 
 .bubble:hover::after, .bubble:hover::before {
-  box-sizing: inherit;
   -webkit-box-shadow: 0 6px grey;
   box-shadow: 0 6px grey;
-}
+} */
 
 .bubble:active::after, .bubble:active::before {
-  box-sizing: inherit;
   -webkit-box-shadow: 0 0 grey;
   box-shadow: 0 0 grey;
 }
