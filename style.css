@@ -55,6 +55,9 @@ img {
 
 /* Chat Bubble Button */
 .bubble {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
   font-family: 'Press Start 2P';
   align-items: center;
   font-size: 1em;
@@ -65,13 +68,11 @@ img {
   position: relative;
   display: inherit;
   cursor: pointer;
-  -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  outline: none;
   z-index: 2;
   white-space: nowrap;
 }
@@ -84,7 +85,7 @@ img {
   transform: translateY(2px);
 }
 
-.bubble:hover:active, .bubble:active  {
+.bubble:hover:active, .bubble:active {
   transform: translateY(8px);
 }
 
