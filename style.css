@@ -55,9 +55,9 @@ img {
 /* Chat Bubble Button */
 .bubble {
   align-items: center;
-  font-size: 16px;
+  font-size: 1em;
   height: 40px;
-  padding: 0 20px;
+  padding: 0 16px;
   color: black;
   margin: 8px;
   position: relative;
@@ -79,11 +79,11 @@ img {
 }
 
 .bubble:active, .bubble:hover:active {
-  top: 8px;
+  transform: translateY(8px);
 }
 
 .bubble:hover {
-  top: 2px;
+  transform: translateY(2px);
 }
 
 .bubble:hover::after, .bubble:hover::before {
