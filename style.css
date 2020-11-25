@@ -63,7 +63,7 @@ img {
   color: black;
   margin: 8px;
   position: relative;
-  display: block;
+  display: inherit;
   cursor: pointer;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
