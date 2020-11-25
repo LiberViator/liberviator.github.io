@@ -63,7 +63,7 @@ img {
   color: black;
   margin: 8px;
   position: relative;
-  display: flex;
+  display: block;
   cursor: pointer;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -73,7 +73,6 @@ img {
   user-select: none;
   z-index: 2;
   white-space: nowrap;
-  background: rgba(0,0,0,0)
 }
 
 .bubble>img {
