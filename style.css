@@ -96,7 +96,7 @@ img {
   box-shadow: 0 0 grey;
 }
 
-.bubble::after {
+.bubble::before {
   -webkit-box-shadow: 0 8px grey;
   box-shadow: 0 8px grey;
   content: "";
@@ -110,7 +110,7 @@ img {
   z-index: -1;
 }
 
-.bubble::before {
+.bubble::after {
   -webkit-box-shadow: 0 4px grey;
   box-shadow: 0 8px grey;
   content: "";
