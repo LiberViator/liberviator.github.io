@@ -28,6 +28,16 @@ img {
   height: 100vh;
 }
 
+.noselect {
+  -webkit-user-drag: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 #chat {
   justify-content: center;
   align-items: center;
@@ -45,8 +55,8 @@ img {
   position: absolute;
   width: 60vw;
   height: auto;
-  min-width: 64px;
-  min-height: 64px;
+  min-width: 256px;
+  min-height: 256px;
   max-width: 512px;
   max-height: 512px;
   z-index: -1;
@@ -55,6 +65,8 @@ img {
 .bubble {
   text-decoration: none;
   font-family: 'Press Start 2P';
+  align-self: center;
+  align-content: center;
   align-items: center;
   font-size: 1em;
   height: 40px;
@@ -62,62 +74,52 @@ img {
   color: black;
   margin: 8px;
   position: relative;
-  display: inherit;
+  display: inline-flex;
   cursor: pointer;
   outline: none;
   z-index: 2;
   white-space: nowrap;
-  box-sizing: inherit;
 }
 
 .bubble>img {
   margin-right: 8px;
 }
 
-.bubble:active {
-  transform: translateY(8px);
-}
-
-.bubble:hover {
+/* .bubble:hover {
   transform: translateY(2px);
-}
-
-.bubble:hover:active, .bubble:active {
+} */
+.bubble:active, .bubble:hover:active  {
   transform: translateY(8px);
 }
 
-.bubble:hover::after, .bubble:hover::before {
+/* .bubble:hover::after, .bubble:hover::before {
   -webkit-box-shadow: 0 6px grey;
   box-shadow: 0 6px grey;
-}
-
+} */
 .bubble:active::after, .bubble:active::before {
   -webkit-box-shadow: 0 0 grey;
   box-shadow: 0 0 grey;
 }
 
-.bubble::before {
+.bubble::before, .bubble::after {
   -webkit-box-shadow: 0 8px grey;
   box-shadow: 0 8px grey;
   content: "";
   position: absolute;
-  top: 8px;
-  bottom: 8px;
-  left: 0;
-  right: 0;
   background: white;
   z-index: -1;
 }
 
+.bubble::before {
+  top: 8px;
+  bottom: 8px;
+  left: 0;
+  right: 0;
+}
+
 .bubble::after {
-  -webkit-box-shadow: 0 4px grey;
-  box-shadow: 0 8px grey;
-  content: "";
-  position: absolute;
   top: 0;
   bottom: 0;
   left: 8px;
   right: 8px;
-  background: white;
-  z-index: -1;
 }
