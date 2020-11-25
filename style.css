@@ -71,6 +71,7 @@ img {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  outline: none;
   z-index: 2;
   white-space: nowrap;
 }
