@@ -2,90 +2,26 @@
 <html lang="en">
 
 <head>
-  <title>Portfolio</title>
-  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
-  <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#000000"> <!-- Chrome, Firefox OS and Opera -->
-  <meta name="msapplication-navbutton-color" content="#000000"> <!-- Windows Phone -->
-  <meta name="apple-mobile-web-app-status-bar-style" content="#000000"> <!-- iOS Safari -->
-  <link rel="stylesheet" href="css/style.css" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500&display=swap" rel="stylesheet">
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
-  <header>
-    <div id="desktop-wrapper">
-      <div class="logo-container">
-        <img class="logo" src="./img/logo-light.svg" />
-      </div>
-      <nav class="nav-container">
-        <ul class="nav-links">
-          <li><a class="nav-link" data-translate="work" href="#">WORK</a></li>
-          <li id="about"><a class="nav-link" data-translate="about" href="#">ABOUT</a></li>
-          <li><a class="nav-link" data-translate="contact" href="#">CONTACT</a></li>
-        </ul>
-      </nav>
-      <div class="lang-container">
-        <ul class="langs">
-          <li><a class="lang" href="/pl/">PL</a></li>
-          <li><a class="lang" href="/en/">EN</a></li>
-        </ul>
-      </div>
+
+  <div class='comp'>
+    <div id='chat'>
+      <a class='bubble'><img src="img/icon.svg" alt="icon">CV</a>
+      <a class='bubble'>About Me</a>
+      <a class='bubble'>My Works</a>
+      <a class='bubble'>Contact</a>
     </div>
-    <div id="tablet-wrapper">
-      <img id="logo-light" class="logo" src="/img/logo-light.svg" alt="logo" />
-      <img id="logo-dark" class="logo" src="/img/logo-dark.svg" alt="logo" />
-      <div class="burger" onclick="show()">
-        <span id="one"></span>
-        <span id="two"></span>
-        <span id="three"></span>
-      </div>
-      <ul class="menu-links">
-        <li><a class="menu-link" data-translate="work" href="#">WORK</a></li>
-        <li><a class="menu-link" data-translate="about" href="#">ABOUT</a></li>
-        <li><a class="menu-link" data-translate="contact" href="#">CONTACT</a></li>
-      </ul>
-      <script src="js/menu.js"></script>
-    </div>
-  </header>
-  <main>
-    <model-viewer src="assets/Astronaut.gltf" controls auto-rotate
-    poster="assets/poster2.png">
-  <!--<div class="gallery">
-    <div>
-    <img id="img1" src="./img/img.svg" class="gallery-img">
+    <img id='nazarFigure' src="img/figure.png">
   </div>
-  <div>
-  <img id="img1" src="./img/img.svg" class="gallery-img">
-  </div>
-  <div>
-  <img id="img1" src="./img/img2.svg" class="gallery-img">
-</div>
-<div>
-<img id="img1" src="./img/img.svg" class="gallery-img">
-</div>
-<div>
-<img id="img1" src="./img/img1.svg" class="gallery-img">
-</div>
-<div>
-<img id="img1" src="./img/img.svg" class="gallery-img">
-</div>
-<div>
-<img id="img1" src="./img/img.svg" class="gallery-img">
-</div>
-</div>-->
-  <div id="fade-left"></div>
-  <div id="fade-right"></div>
-</main>
-  <!-- <select id="lang">
-      <option>English</option>
-      <option>Polish</option>
-      <script src="js/lang.js"></script>
-    </select> -->
 </body>
 
 </html>
