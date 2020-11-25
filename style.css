@@ -79,12 +79,12 @@ img {
   margin-right: 8px;
 }
 
-.bubble:active, .bubble:hover:active {
-  transform: translateY(8px);
-}
-
 .bubble:hover {
   transform: translateY(2px);
+}
+
+.bubble:hover:active, .bubble:active  {
+  transform: translateY(8px);
 }
 
 .bubble:hover::after, .bubble:hover::before {
