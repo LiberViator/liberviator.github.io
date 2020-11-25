@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  border: none;
 }
 
 html {
@@ -54,6 +55,7 @@ img {
 
 /* Chat Bubble Button */
 .bubble {
+  font-family: 'Press Start 2P';
   align-items: center;
   font-size: 1em;
   height: 40px;
@@ -71,7 +73,7 @@ img {
   user-select: none;
   z-index: 2;
   white-space: nowrap;
-  /* background-color: red; */
+  background: rgba(0,0,0,0)
 }
 
 .bubble>img {
