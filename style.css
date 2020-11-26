@@ -5,6 +5,7 @@
 }
 
 html {
+  font-size: 16px;
   font-family: 'Press Start 2P';
   background-color: #111;
 }
@@ -71,7 +72,7 @@ img {
   align-items: center;
   font-size: 1em;
   height: 40px;
-  padding: 0 24px;
+  padding: 0 20px;
   color: black;
   margin: 8px;
   position: relative;
@@ -80,16 +81,24 @@ img {
   outline: none;
   z-index: 2;
   white-space: nowrap;
+  min-width: 8px;
 }
 
 .bubble>img {
   margin-right: 8px;
 }
 
+.icon>img {
+  margin-left: 4px;
+  margin-right: 0;
+  zoom: 1.5;
+}
+
+
 /* .bubble:hover {
   transform: translateY(2px);
 } */
-.bubble:active, .bubble:hover:active  {
+.bubble:active, .bubble:hover:active {
   transform: translateY(8px);
 }
 
