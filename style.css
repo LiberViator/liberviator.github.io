@@ -94,17 +94,8 @@ img {
   zoom: 1.5;
 }
 
-.bubble:hover {
-  transform: translateY(2px);
-}
-
 .bubble:active, .bubble:hover:active {
   transform: translateY(8px);
-}
-
-.bubble:hover::after, .bubble:hover::before {
-  -webkit-box-shadow: 0 6px grey;
-  box-shadow: 0 6px grey;
 }
 
 .bubble:active::after, .bubble:active::before {
@@ -137,6 +128,11 @@ img {
 
 @media (hover: hover) and (pointer: fine) {
   .bubble:hover {
-    transform: translateY(0);
+    transform: translateY(2px);
+  }
+
+  .bubble:hover::after, .bubble:hover::before {
+    -webkit-box-shadow: 0 6px grey;
+    box-shadow: 0 6px grey;
   }
 }
