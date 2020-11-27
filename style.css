@@ -94,20 +94,26 @@ img {
   zoom: 1.5;
 }
 
-.bubble:active, .bubble:hover:active {
+@media (hover: hover) and (pointer: fine) {
+  .bubble:hover {
+    transform: translateY(2px);
+  }
+
+  .bubble:hover:active {
+    transform: translateY(8px);
+  }
+
+  .bubble:hover::before, .bubble:hover::after {
+    -webkit-box-shadow: 0 6px grey;
+    box-shadow: 0 6px grey;
+  }
+}
+
+.bubble:active {
   transform: translateY(8px);
 }
 
-.bubble:hover {
-  transform: translateY(2px);
-}
-
-.bubble:hover::after, .bubble:hover::before {
-  -webkit-box-shadow: 0 6px grey;
-  box-shadow: 0 6px grey;
-}
-
-.bubble:active::after, .bubble:active::before {
+.bubble:active::before, .bubble:active::after {
   -webkit-box-shadow: 0 0 grey;
   box-shadow: 0 0 grey;
 }
@@ -133,10 +139,4 @@ img {
   bottom: 0;
   left: 8px;
   right: 8px;
-}
-
-@media (pointer: coarsed) {
-  .bubble:hover {
-    transform: translateY(0);
-  }
 }
