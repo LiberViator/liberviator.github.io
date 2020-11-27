@@ -98,6 +98,15 @@ img {
   transform: translateY(8px);
 }
 
+.bubble:hover {
+  transform: translateY(2px);
+}
+
+.bubble:hover::after, .bubble:hover::before {
+  -webkit-box-shadow: 0 6px grey;
+  box-shadow: 0 6px grey;
+}
+
 .bubble:active::after, .bubble:active::before {
   -webkit-box-shadow: 0 0 grey;
   box-shadow: 0 0 grey;
@@ -126,13 +135,8 @@ img {
   right: 8px;
 }
 
-@media (hover: hover) and (pointer: fine) {
+@media (pointer: coarsed) {
   .bubble:hover {
-    transform: translateY(2px);
-  }
-
-  .bubble:hover::after, .bubble:hover::before {
-    -webkit-box-shadow: 0 6px grey;
-    box-shadow: 0 6px grey;
+    transform: translateY(0);
   }
 }
