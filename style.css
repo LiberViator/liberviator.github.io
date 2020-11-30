@@ -75,8 +75,6 @@ img {
 /* Bubble chat 💬 */
 .bubble {
   position: relative;
-  outline: none;
-  z-index: 2;
 }
 
 .bubble::before {
