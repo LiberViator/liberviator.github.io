@@ -1,8 +1,8 @@
-const start = ["#cv", "#about", "#works", "#contact"]
+const start = ["#cvButton", "#aboutButton", "#worksButton", "#contactButton"]
 
-const contact = ["#call", "#mail"]
+const contact = ["#callButton", "#mailButton"]
 
-const back = ["#back"];
+const back = ["#backButton"];
 
 const allElements = [...back, ...start, ...contact];
 
@@ -12,6 +12,10 @@ $(document.querySelectorAll(contact)).css("display", "inline-flex");
 $(document.querySelectorAll(back)).css("display", "inline-flex");
 }
 
+function openCv() {
+$(document.querySelectorAll(allElements)).css("display", "none");
+document.getElementById('cv').style.display = "inline-table";
+}
 
 function backToStart() {
 $(document.querySelectorAll(allElements)).css("display", "none");

@@ -16,18 +16,26 @@
   <script src="main.js"></script>
 </head>
 
-<body ontouchstart="" class="noselect">
-  <div id="chat">
-    <a id="back" onclick="backToStart()" class="bubble button"><</a>
-    <a id="cv" onclick="openCv()" class="bubble button"><img draggable="false" src="img/icon.svg" alt="icon">CV</a>
-    <a id="about" onclick="openAbout()" class="bubble button">About Me</a>
-    <a id="works" onclick="openWorks()" class="bubble button">My Works</a>
-    <a id="contact" onclick="openContact()" class="bubble button">Contact</a>
-    <a id="call" href="tel:+48698284677" class="bubble button icon">Call<img draggable="false" src="img/call.svg" alt="icon"></a>
-    <a id="mail" href="mailto:nazar.poplavsky@gmail.com" class="bubble button icon">Mail<img draggable="false" src="img/mail.svg" alt="icon"></a>
+<body>
+  <div class="home" ontouchstart="" class="noselect">
+    <div id="chat">
+      <button id="backButton" onclick="backToStart()" class="bubble button"><</button>
+      <button id="cvButton" onclick="openCv()" class="bubble button"><img draggable="false" src="img/icon.svg" alt="icon">CV</button>
+      <button id="aboutButton" onclick="openAbout()" class="bubble button">About Me</button>
+      <button id="worksButton" onclick="openWorks()" class="bubble button">My Works</button>
+      <button id="contactButton" onclick="openContact()" class="bubble button">Contact</button>
+      <button id="callButton" href="tel:+48698284677" class="bubble button icon">Call<img draggable="false" src="img/call.svg" alt="icon"></button>
+      <button id="mailButton" href="mailto:nazar.poplavsky@gmail.com" class="bubble button icon">Mail<img draggable="false" src="img/mail.svg" alt="icon"></button>
+    </div>
+    <img id='nazarFigure' draggable="false" src="img/figure.png">
+    <!-- <div id="cv" class="bubble">
+      <img id="printer" draggable="false" src="img/printer.png">
+      <img draggable="false" src="img/cv.png">
+      <div>
+        <button class="bubble button"><img draggable="false" src="img/icon.svg" alt="icon">Download</button>
+      </div>
+    </div> -->
   </div>
-  <img id='nazarFigure' draggable="false" src="img/figure.png">
-
 </body>
 
 </html>

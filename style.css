@@ -2,12 +2,34 @@
   margin: 0;
   padding: 0;
   border: none;
+  box-sizing: border-box;
+}
+
+#errorPage{
+  font-family: 'Press Start 2P';
+  font-size: 80px;
+  color: white;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
 html {
-  font-size: 16px;
   font-family: 'Press Start 2P';
   background-color: #111;
+}
+
+.noselect {
+  -webkit-user-drag: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  user-drag: none;
 }
 
 img {
@@ -22,24 +44,12 @@ img {
   image-rendering: crisp-edges;
 }
 
-.noselect {
-  -webkit-user-drag: none;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  user-drag: none;
-}
-
 .icon {
   margin-left: 4px;
   margin-right: 0;
 }
 
-body {
-  display: flex;
+.home {
   position: fixed;
   justify-content: center;
   width: 100%;
@@ -59,10 +69,13 @@ body {
 
 /* Nazar figure 🙋‍♂️ */
 #nazarFigure {
-  align-self: center;
-  display: block;
-  position: relative;
-  width: 60vw;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+  width: 80vw;
   height: auto;
   min-width: 256px;
   min-height: 256px;
@@ -72,12 +85,9 @@ body {
 
 /* Bubble chat 💬 */
 .bubble {
-  padding: 0 20px;
-  margin: 8px;
   position: relative;
   outline: none;
   z-index: 2;
-  min-width: 8px;
 }
 
 .bubble::before {
@@ -94,17 +104,36 @@ body {
   right: 8px;
 }
 
+.bubble::after, .bubble::before {
+  -webkit-box-shadow: 0 8px grey;
+  box-shadow: 0 8px grey;
+  content: '';
+  position: absolute;
+  background: white;
+  z-index: -1;
+}
+
 /* Bubble button 🕹️ */
 .button {
+  padding: 0 20px;
+  margin: 8px;
   align-self: center;
-  height: 40px;
   align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: auto;
+  min-height: 32px;
+  max-height: 40px;
   text-decoration: none;
   font-family: 'Press Start 2P';
+  font-size: 16px;
   display: inline-flex;
   color: black;
   cursor: pointer;
   white-space: nowrap;
+  background-color: transparent;
+  min-width: 8px;
+  position: relative;
 }
 
 @media (hover: hover) {
@@ -127,17 +156,49 @@ body {
   box-shadow: 0 0 grey;
 }
 
-.button::after, .button::before {
-  -webkit-box-shadow: 0 8px grey;
-  box-shadow: 0 8px grey;
-  content: '';
+#cv {
   position: absolute;
-  background: white;
-  z-index: -1;
+  top: 16%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 50%;
+  height: auto;
+  max-width: 527px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
 }
 
+#cv>div {
+  justify-content: center;
+  display: flex;
 
+}
 
-#back, #call, #mail {
+#cv>img {
+  width: 100%;
+  height: auto;
+  max-height: 842px;
+  max-width: 595px;
+  margin-bottom: 8px;
+}
+
+#printer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100vw;
+  height: auto;
+  min-width: 320px;
+  min-height: 128px;
+  max-width: 768px;
+  max-height: 256px;
+  z-index: 5;
+}
+
+#backButton, #callButton, #mailButton {
   display: none;
 }
