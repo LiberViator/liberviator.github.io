@@ -5,17 +5,6 @@
   box-sizing: border-box;
 }
 
-#errorPage{
-  font-family: 'Press Start 2P';
-  font-size: 80px;
-  color: white;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-}
-
 html {
   font-family: 'Press Start 2P';
   background-color: #111;
