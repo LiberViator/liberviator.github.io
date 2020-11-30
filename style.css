@@ -36,10 +36,9 @@ img {
 .icon {
   margin-left: 4px;
   margin-right: 0;
-  zoom: 1.5;
 }
 
-.comp {
+body {
   display: flex;
   position: fixed;
   justify-content: center;
@@ -53,10 +52,11 @@ img {
   display: flex;
   align-self: center;
   position: absolute;
-  width: 100vw;
+  width: 100%;
   height: auto;
   top: 30vh;
 }
+
 /* Nazar figure 🙋‍♂️ */
 #nazarFigure {
   align-self: center;
@@ -69,61 +69,15 @@ img {
   max-width: 512px;
   max-height: 512px;
 }
-/* Bubble button 💬 */
+
+/* Bubble chat 💬 */
 .bubble {
-  text-decoration: none;
-  font-family: 'Press Start 2P';
-  align-self: center;
-  align-content: center;
-  align-items: center;
-  font-size: 1em;
-  height: 40px;
   padding: 0 20px;
-  color: black;
   margin: 8px;
   position: relative;
-  display: inline-flex;
-  cursor: pointer;
   outline: none;
   z-index: 2;
-  white-space: nowrap;
   min-width: 8px;
-}
-
-.bubble > img {
-  margin-right: 8px;
-}
-/* Bubble button animation 🕹️ */
-@media (hover: hover) {
-  .bubble:hover {
-    transform: translateY(2px);
-  }
-
-  .bubble:hover::after,
-  .bubble:hover::before {
-    -webkit-box-shadow: 0 6px grey;
-    box-shadow: 0 6px grey;
-  }
-}
-
-.bubble:active {
-  transform: translateY(8px);
-}
-
-.bubble:active::after,
-.bubble:active::before {
-  -webkit-box-shadow: 0 0 grey;
-  box-shadow: 0 0 grey;
-}
-
-.bubble::after,
-.bubble::before {
-  -webkit-box-shadow: 0 8px grey;
-  box-shadow: 0 8px grey;
-  content: '';
-  position: absolute;
-  background: white;
-  z-index: -1;
 }
 
 .bubble::before {
@@ -138,4 +92,52 @@ img {
   bottom: 0;
   left: 8px;
   right: 8px;
+}
+
+/* Bubble button 🕹️ */
+.button {
+  align-self: center;
+  height: 40px;
+  align-items: center;
+  text-decoration: none;
+  font-family: 'Press Start 2P';
+  display: inline-flex;
+  color: black;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+@media (hover: hover) {
+  .button:hover {
+    transform: translateY(2px);
+  }
+
+  .button:hover::after, .button:hover::before {
+    -webkit-box-shadow: 0 6px grey;
+    box-shadow: 0 6px grey;
+  }
+}
+
+.button:active {
+  transform: translateY(8px);
+}
+
+.button:active::after, .button:active::before {
+  -webkit-box-shadow: 0 0 grey;
+  box-shadow: 0 0 grey;
+}
+
+.button::after, .button::before {
+  -webkit-box-shadow: 0 8px grey;
+  box-shadow: 0 8px grey;
+  content: '';
+  position: absolute;
+  background: white;
+  z-index: -1;
+}
+
+
+
+#back, #call, #mail {
+  display: none;
 }
