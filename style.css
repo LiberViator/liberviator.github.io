@@ -54,6 +54,7 @@ img {
   width: 100%;
   height: auto;
   top: 30vh;
+  z-index: 2
 }
 
 /* Nazar figure 🙋‍♂️ */
@@ -160,7 +161,6 @@ img {
 #cv>div {
   justify-content: center;
   display: flex;
-
 }
 
 #cv>img {
