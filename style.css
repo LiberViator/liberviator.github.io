@@ -5,6 +5,8 @@
   box-sizing: border-box;
 }
 
+*, *:before, *:after { box-sizing: border-box; }
+
 html {
   font-family: 'Press Start 2P';
   background-color: #111;
@@ -75,31 +77,9 @@ img {
 /* Bubble chat 💬 */
 .bubble {
   position: relative;
-  -webkit-box-shadow:
-    /* Border */
-    -8px 0px white,
-    8px 0px white,
-    0 8px white,
-    0 -8px white,
-    /* Shadow */
-    0 16px grey,
-    -8px 8px grey,
-    8px 8px grey;
-  box-shadow:
-    /* Border */
-    -8px 0px white,
-    8px 0px white,
-    0 8px white,
-    0 -8px white,
-    /* Shadow */
-    0 16px grey,
-    -8px 8px grey,
-    8px 8px grey;
-  margin: 16px;
-  background: white;
 }
 
-/* .bubble::before {
+.bubble::before {
   top: 8px;
   bottom: 8px;
   left: 0;
@@ -120,15 +100,19 @@ img {
   position: absolute;
   background: white;
   z-index: -1;
-} */
+}
+
 /* Bubble button 🕹️ */
 .button {
-  padding: 0 8px;
+  padding: 0 20px;
+  margin: 8px;
   align-self: center;
   align-items: center;
   justify-content: center;
-  height: 24px;
+  height: 40px;
   width: auto;
+  min-height: 32px;
+  max-height: 40px;
   text-decoration: none;
   font-family: 'Press Start 2P';
   font-size: 16px;
@@ -136,6 +120,7 @@ img {
   color: black;
   cursor: pointer;
   white-space: nowrap;
+  background-color: transparent;
   min-width: 8px;
   position: relative;
 }
@@ -145,27 +130,9 @@ img {
     transform: translateY(2px);
   }
 
-  .button:hover, .button:hover {
-    -webkit-box-shadow:
-      /* Border */
-      -8px 0px white,
-      8px 0px white,
-      0 8px white,
-      0 -8px white,
-      /* Shadow */
-      0 14px grey,
-      -8px 6px grey,
-      8px 6px grey;
-    box-shadow:
-      /* Border */
-      -8px 0px white,
-      8px 0px white,
-      0 8px white,
-      0 -8px white,
-      /* Shadow */
-      0 14px grey,
-      -8px 6px grey,
-      8px 6px grey;
+  .button:hover::after, .button:hover::before {
+    -webkit-box-shadow: 0 6px grey;
+    box-shadow: 0 6px grey;
   }
 }
 
@@ -173,27 +140,9 @@ img {
   transform: translateY(8px);
 }
 
-.button:active, .button:active {
-  -webkit-box-shadow:
-    /* Border */
-    -8px 0px white,
-    8px 0px white,
-    0 8px white,
-    0 -8px white,
-    /* Shadow */
-    0 0px grey,
-    -8px 0px grey,
-    8px 0px grey;
-  box-shadow:
-    /* Border */
-    -8px 0px white,
-    8px 0px white,
-    0 8px white,
-    0 -8px white,
-    /* Shadow */
-    0 0px grey,
-    -8px 0px grey,
-    8px 0px grey;
+.button:active::after, .button:active::before {
+  -webkit-box-shadow: 0 0 grey;
+  box-shadow: 0 0 grey;
 }
 
 #cv {
