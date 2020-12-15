@@ -12,7 +12,7 @@
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!-- jQuery library -->
   <script src="main.js"></script>
 </head>
 
@@ -20,12 +20,11 @@
   <div class="home" ontouchstart="" class="noselect">
     <div id="chat">
       <button id="backButton" onclick="backToStart()" class="bubble button">Back</button>
-          <button id="cvButton" click="openCv()" class="bubble button"><img draggable="false" src="img/icon.svg" alt="icon">CV</button>
-          <button id="aboutButton" onclick="openAbout()" class="bubble button">About Me</button>
-          <button id="worksButton" onclick="openWorks()" class="bubble button">My Works</button>
-          <button id="contactButton" onclick="openContact()" class="bubble button">Contact</button>
-          <a id="callButton" href="tel:+48698284677" class="bubble button icon">Call<img draggable="false" src="img/call.svg" alt="icon"></a>
-          <a id="mailButton" href="mailto: nazar.poplavsky@gmail.com" class="bubble button icon">Mail<img draggable="false" src="img/mail.svg" alt="icon"></a>
+      <button id="aboutButton" onclick="openAbout()" class="bubble button">About Me</button>
+      <button id="worksButton" onclick="openWorks()" class="bubble button">My Works</button>
+      <button id="contactButton" onclick="openContact()" class="bubble button">Contact</button>
+      <a id="callButton" href="tel:+48698284677" class="bubble button icon">Call<img draggable="false" src="img/call.svg" alt="icon"></a>
+      <a id="mailButton" href="mailto: nazar.poplavsky@gmail.com" class="bubble button icon">Mail<img draggable="false" src="img/mail.svg" alt="icon"></a>
     </div>
     <img id='nazarFigure' draggable="false" src="img/figure.png">
     <!-- <div id="cv" class="bubble">
@@ -35,10 +34,32 @@
         <button class="bubble button"><img draggable="false" src="img/icon.svg" alt="icon">Download</button>
       </div>
     </div> -->
-    <!-- <div id="column">
-      <div class="bubble container"><img src="img/heart.png" alt="Nature"></div>
-      <div class="bubble container"><img src="img/cv.png" alt="Nature"></div>
-    </div> -->
+
+
+  <div id="works">
+
+      <div class="nav">
+        <button id="backButton" onclick="backToStart()" class="bubble button">Back</button>
+        <ul>
+          <li class="list active" data-filter="all">All</li>
+          <li class="list" data-filter="uxui">UX/UI</li>
+          <li class="list" data-filter="3d">3D</li>
+          <li class="list" data-filter="other">Other</li>
+        </ul>
+      </div>
+
+      <ul class="column">
+        <div class="bubble container uxui"><img src="img/heart.png" alt="Nature"></div>
+        <div class="bubble container 3d"><img src="img/cv.png" alt="Nature"></div>
+        <div class="bubble container 3d"><img src="img/heart.png" alt="Nature"></div>
+        <div class="bubble container 3d other"><img src="img/figure.png" alt="Nature"></div>
+        <div class="bubble container uxui"><img src="img/heart.png" alt="Nature"></div>
+        <div class="bubble container 3d"><img src="img/cv.png" alt="Nature"></div>
+        <div class="bubble container 3d"><img src="img/heart.png" alt="Nature"></div>
+        <div class="bubble container other"><img src="img/cv.png" alt="Nature"></div>
+      </ul>
+    </div>
+
 
   </div>
 </body>
