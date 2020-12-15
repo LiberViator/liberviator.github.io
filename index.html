@@ -12,7 +12,7 @@
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!-- jQuery library -->
   <script src="main.js"></script>
 </head>
 
@@ -21,11 +21,11 @@
     <div id="chat">
       <button id="backButton" onclick="backToStart()" class="bubble button">Back</button>
           <button id="cvButton" click="openCv()" class="bubble button"><img draggable="false" src="img/icon.svg" alt="icon">CV</button>
-          <button id="aboutButton" tabindex="0" onclick="openAbout()" class="bubble button">About Me</button>
-          <button id="worksButton" tabindex="0" onclick="openWorks()" class="bubble button">My Works</button>
+          <button id="aboutButton" onclick="openAbout()" class="bubble button">About Me</button>
+          <button id="worksButton" onclick="openWorks()" class="bubble button">My Works</button>
           <button id="contactButton" onclick="openContact()" class="bubble button">Contact</button>
-          <button id="callButton" href="tel:+48698284677" class="bubble button icon">Call<img draggable="false" src="img/call.svg" alt="icon"></button>
-          <button id="mailButton" href="mailto:nazar.poplavsky@gmail.com" class="bubble button icon">Mail<img draggable="false" src="img/mail.svg" alt="icon"></button>
+          <a id="callButton" href="tel:+48698284677" class="bubble button icon">Call<img draggable="false" src="img/call.svg" alt="icon"></a>
+          <a id="mailButton" href="mailto: nazar.poplavsky@gmail.com" class="bubble button icon">Mail<img draggable="false" src="img/mail.svg" alt="icon"></a>
     </div>
     <img id='nazarFigure' draggable="false" src="img/figure.png">
     <!-- <div id="cv" class="bubble">
@@ -35,6 +35,11 @@
         <button class="bubble button"><img draggable="false" src="img/icon.svg" alt="icon">Download</button>
       </div>
     </div> -->
+    <!-- <div id="column">
+      <div class="bubble container"><img src="img/heart.png" alt="Nature"></div>
+      <div class="bubble container"><img src="img/cv.png" alt="Nature"></div>
+    </div> -->
+
   </div>
 </body>
 
