@@ -1,3 +1,5 @@
+// Button actions 💥
+
 const start = ["#nazarFigure", "#chat"]
 
 const chat = ["#cvButton", "#aboutButton", "#worksButton", "#contactButton"]

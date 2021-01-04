@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   border: none;
-  box-sizing: border-box;
 }
 
 *, *:before, *:after {
@@ -107,7 +106,7 @@ img {
 /* Bubble button 🕹️ */
 .button {
   padding: 0 20px;
-  margin: 8px;
+  margin-bottom: 8px;
   align-self: center;
   align-items: center;
   justify-content: center;
@@ -161,12 +160,12 @@ img {
   flex-direction: column;
 }
 
-#cv>div {
+#cv div {
   justify-content: center;
   display: flex;
 }
 
-#cv>img {
+#cv img {
   width: 100%;
   height: auto;
   max-height: 842px;
@@ -202,24 +201,40 @@ img {
 }
 
 .nav {
-  position: fixed;
-  width: 50%;
-  height: 80px;
-  display: flex;
+  width: 100%;
+  position: sticky;
+  padding: 40px 0 16px 0;
+  height: auto;
   justify-content: space-between;
   align-items: center;
   background: #111;
   z-index: 3;
 }
 
+.nav ul {
+  list-style: none;
+  display: inline-flex;
+  white-space: nowrap;
+}
+
+.nav ul li {
+  color: grey;
+  cursor: pointer;
+}
+
+.nav ul li.active {
+  color: white;
+}
+
 .column {
-  display: flex;
-  flex-wrap: wrap;
+  column-count: 2;
 }
 
 .container {
   width: 100%;
   height: auto;
+  display: inline-block;
+  margin: 12px 0;
 }
 
 .container img {
@@ -230,14 +245,32 @@ img {
   object-fit: cover;
 }
 
-.nav ul li {
-  list-style: none;
-  display: inline-flex;
-  color: grey;
-  white-space: nowrap;
-  cursor: pointer;
+@media screen and (max-width:745px) {
+  .nav {
+    width: 100%;
+  }
+
+  #works {
+    margin: 0 16px;
+    width: auto;
+  }
+
+  .column {
+    column-count: 2;
+  }
 }
 
-.nav ul li.active {
-color: white;
+@media screen and (max-width:425px) {
+  .nav {
+    width: 100%;
+  }
+
+  #works {
+    margin: 0 16px;
+    width: auto;
+  }
+
+  .column {
+    column-count: 1;
+  }
 }
