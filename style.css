@@ -10,6 +10,7 @@
 
 html {
   height: 100%;
+  width: 100%;
   font-family: 'Press Start 2P';
   background-color: #000;
 }
@@ -37,11 +38,6 @@ img {
   image-rendering: crisp-edges;
 }
 
-.icon {
-  margin-left: 4px;
-  margin-right: 0;
-}
-
 body {
   display: flex;
   height: 100%;
@@ -51,7 +47,7 @@ body {
 }
 
 .home {
-  width: 80%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -78,13 +74,14 @@ body {
   order: 1;
   align-self: stretch;
   margin-top: 32px;
+  overflow: hidden;
 }
 
 #navigation a {
   font-family: "Press Start 2P";
   font-style: normal;
   font-weight: normal;
-  font-size: calc(16px + (32 - 16) * ((100vw - 300px) / (1600 - 300)));
+  font-size: 16px;
   text-align: center;
   text-decoration-line: none;
   text-transform: uppercase;
@@ -110,6 +107,7 @@ body {
   margin-bottom: 16px;
   flex: none;
   order: 1;
+  /* background-color: yellow; */
 }
 
 .credits img {
@@ -271,7 +269,6 @@ body {
 
 @media screen and (max-height:425px) and (orientation:landscape) {
   .home {
-    width: 100%;
     flex-direction: row;
   }
 
