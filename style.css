@@ -9,6 +9,7 @@
 }
 
 html {
+  height: 100%;
   font-family: 'Press Start 2P';
   background-color: #000;
 }
@@ -43,10 +44,10 @@ img {
 
 body {
   display: flex;
-  min-height: 100vh;
+  height: 100%;
   flex-direction: column;
   align-items: center;
-  background-color: green;
+  /* background-color: green; */
 }
 
 .home {
@@ -55,25 +56,27 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  order: 0;
   flex: 1;
-  background-color: red;
+  /* background-color: red; */
 }
 
 #nazarFigure {
-  width: 100%;
   height: auto;
+  width: 100%;
   object-fit: contain;
-  flex-grow: 1;
+  flex: 4;
+  order: 0;
+  /* background-color: blue; */
 }
 
 #navigation {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex: none;
+  flex: 2;
   order: 1;
   align-self: stretch;
-  flex-grow: 1;
   margin-top: 32px;
 }
 
@@ -103,6 +106,7 @@ body {
   color: #222222;
   margin-bottom: 16px;
   flex: none;
+  order: 1;
 }
 
 /* About page */
@@ -262,6 +266,11 @@ body {
   .home {
     width: 100%;
     flex-direction: row;
+  }
+
+  #nazarFigure {
+    height: 100%;
+    width: auto;
   }
 
   #navigation {
