@@ -93,8 +93,7 @@ body {
   align-self: stretch;
   flex-grow: 0;
   position: static;
-  margin-bottom: 32px;
-
+  margin-bottom: 2em;
 }
 
 #navigation a:last-child {
