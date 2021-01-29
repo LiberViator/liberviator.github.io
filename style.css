@@ -90,7 +90,6 @@ body {
   text-transform: uppercase;
   color: #FFFFFF;
   flex: none;
-  align-self: stretch;
   flex-grow: 0;
   position: static;
   margin-bottom: 2em;
@@ -111,6 +110,10 @@ body {
   margin-bottom: 16px;
   flex: none;
   order: 1;
+}
+
+.credits img {
+  zoom: 1.7;
 }
 
 /* About page */
