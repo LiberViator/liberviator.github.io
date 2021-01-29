@@ -84,7 +84,7 @@ body {
   font-family: "Press Start 2P";
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
+  font-size: calc(16px + (32 - 16) * ((100vw - 300px) / (1600 - 300)));
   text-align: center;
   text-decoration-line: none;
   text-transform: uppercase;
@@ -94,6 +94,11 @@ body {
   flex-grow: 0;
   position: static;
   margin-bottom: 32px;
+
+}
+
+#navigation a:last-child {
+  margin-bottom: 0;
 }
 
 .credits {
@@ -271,6 +276,7 @@ body {
   #nazarFigure {
     height: 100%;
     width: auto;
+    flex: 3;
   }
 
   #navigation {
