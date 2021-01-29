@@ -43,7 +43,7 @@ body {
   height: 100%;
   flex-direction: column;
   align-items: center;
-  /* background-color: green; */
+  background-color: green;
 }
 
 .home {
@@ -54,7 +54,7 @@ body {
   align-items: center;
   order: 0;
   flex: 1;
-  /* background-color: red; */
+  background-color: red;
 }
 
 #nazarFigure {
@@ -63,7 +63,7 @@ body {
   object-fit: contain;
   flex: 4;
   order: 0;
-  /* background-color: blue; */
+  background-color: blue;
 }
 
 #navigation {
@@ -75,6 +75,7 @@ body {
   align-self: stretch;
   margin-top: 32px;
   overflow: hidden;
+  background-color: magenta;
 }
 
 #navigation a {
@@ -107,7 +108,7 @@ body {
   margin-bottom: 16px;
   flex: none;
   order: 1;
-  /* background-color: yellow; */
+  background-color: yellow;
 }
 
 .credits img {
