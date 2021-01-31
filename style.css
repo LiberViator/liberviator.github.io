@@ -8,13 +8,6 @@
   box-sizing: border-box;
 }
 
-html {
-  height: 100%;
-  width: 100%;
-  font-family: 'Press Start 2P';
-  background-color: #000;
-}
-
 .noselect {
   -webkit-user-drag: none;
   -webkit-touch-callout: none;
@@ -38,23 +31,31 @@ img {
   image-rendering: crisp-edges;
 }
 
+html {
+  height: 100%;
+  width: 100%;
+  font-family: 'Press Start 2P';
+  background-color: #000;
+}
+
 body {
   display: flex;
   height: 100%;
   flex-direction: column;
   align-items: center;
-  background-color: green;
+  /* background-color: green; */
 }
 
 .home {
   width: 100%;
+  max-width: 512px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   order: 0;
   flex: 1;
-  background-color: red;
+  /* background-color: red; */
 }
 
 #nazarFigure {
@@ -63,7 +64,7 @@ body {
   object-fit: contain;
   flex: 4;
   order: 0;
-  background-color: blue;
+  /* background-color: blue; */
 }
 
 #navigation {
@@ -73,24 +74,24 @@ body {
   flex: 2;
   order: 1;
   align-self: stretch;
-  margin-top: 32px;
+  margin-top: 2rem;
   overflow: hidden;
-  background-color: magenta;
+  font-size: 1em;
+  /* background-color: magenta; */
 }
 
 #navigation a {
   font-family: "Press Start 2P";
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
   text-align: center;
   text-decoration-line: none;
   text-transform: uppercase;
   color: #FFFFFF;
   flex: none;
   flex-grow: 0;
-  position: static;
-  margin-bottom: 2em;
+  margin-bottom: 1.6em;
+  /* background-color: orange; */
 }
 
 #navigation a:last-child {
@@ -101,18 +102,19 @@ body {
   font-family: "Press Start 2P";
   font-style: normal;
   font-weight: normal;
-  font-size: 12px;
+  font-size: 0.7rem;
   line-height: 150%;
   text-align: center;
   color: #222222;
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
   flex: none;
   order: 1;
-  background-color: yellow;
+  /* background-color: yellow; */
 }
 
 .credits img {
-  zoom: 1.7;
+  width: 1em;
+  height: 1em;
 }
 
 /* About page */
@@ -225,7 +227,31 @@ body {
   z-index: 5;
 }
 
-@media screen and (max-width:745px) {
+@media screen and (min-width:768px) {
+  #navigation {
+  font-size: 1.2rem;
+  }
+
+  .credits {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (min-width:1800px) {
+  #navigation {
+  font-size: 1.4rem;
+  }
+
+  .credits {
+    font-size: 1.1rem;
+  }
+}
+
+/* @media screen and (min-width:601px) {
+  #navigation {
+  font-size: 2rem;
+  }
+
   .nav {
     width: 100%;
   }
@@ -243,15 +269,19 @@ body {
   .column {
     column-count: 2;
   }
-}
+} */
 
-@media screen and (max-width:425px) {
+/* @media screen and (max-width:600px) {
   .home {
     width: 100%;
   }
 
-  #navigation a {
-    font-size: 16px;
+  #navigation {
+  font-size: 1rem;
+  }
+
+  .credits {
+    font-size: 0.7rem;
   }
 
   .nav {
@@ -266,7 +296,7 @@ body {
   .column {
     column-count: 1;
   }
-}
+} */
 
 @media screen and (max-height:425px) and (orientation:landscape) {
   .home {
