@@ -7,6 +7,10 @@
 //   $(document.querySelectorAll(contact)).css("display", "inline-flex");
 // }
 
+function goBack() {
+  window.history.back();
+}
+
 // Gallery filter 🧺
 
 $(document).ready(function() {

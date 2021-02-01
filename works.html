@@ -14,27 +14,33 @@
 </head>
 
 <body>
-  <div id="works">
-      <div class="nav">
-        <ul>
-          <li class="list active" data-filter="all">All</li>
-          <li class="list" data-filter="uxui">UX/UI</li>
-          <li class="list" data-filter="3d">3D</li>
-          <li class="list" data-filter="other">Other</li>
-        </ul>
-      </div>
-      <ul class="column">
-        <div class="bubble container uxui"><img src="img/heart.png" alt="Nature"></div>
-        <div class="bubble container 3d"><img src="img/views.png" alt="Nature"></div>
-        <div class="bubble container 3d"><img src="img/heart.png" alt="Nature"></div>
-        <div class="bubble container 3d other"><img src="img/figure.png" alt="Nature"></div>
-        <div class="bubble container uxui"><img src="img/heart.png" alt="Nature"></div>
-        <div class="bubble container 3d"><img src="img/views.png" alt="Nature"></div>
-        <div class="bubble container 3d"><img src="img/heart.png" alt="Nature"></div>
-        <div class="bubble container other"><img src="img/views.png" alt="Nature"></div>
-      </ul>
+  <header>
+    <div class="back" onclick="goBack()">
+      <p>< Back</p>
     </div>
-  </div>
+    <ul>
+      <li class="list active" data-filter="all">All</li>
+      <li class="list" data-filter="uxui">UX/UI</li>
+      <li class="list" data-filter="3d">3D</li>
+      <li class="list" data-filter="other">Other</li>
+    </ul>
+    <div class="burger">
+      <img src="img/burger.png" alt="">
+    </div>
+  </header>
+  <ul class="works">
+        <div class="container uxui"><img src="img/heart.png" alt="Nature"></div>
+        <div class="container 3d"><img src="img/views.png" alt="Nature"></div>
+        <div class="container 3d"><img src="img/heart.png" alt="Nature"></div>
+        <div class="container 3d other"><img src="img/figure.png" alt="Nature"></div>
+        <div class="container uxui"><img src="img/heart.png" alt="Nature"></div>
+        <div class="container 3d"><img src="img/views.png" alt="Nature"></div>
+        <div class="container 3d"><img src="img/heart.png" alt="Nature"></div>
+        <div class="container other"><img src="img/views.png" alt="Nature"></div>
+  </ul>
+  <footer>
+    <h1 class="credits">Made with <img draggable="false" src="img/little_heart.png" alt=""><br>by Nazar Poplavskyi</h1>
+  </footer>
 </body>
 <script src="main.js"></script>
 </html>
