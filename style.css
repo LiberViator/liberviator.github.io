@@ -360,6 +360,10 @@ footer {
     flex: 3;
   }
 
+  .credits {
+    font-size: 0.75rem;
+  }
+
   #navigation {
     align-items: flex-start;
     justify-content: center;
