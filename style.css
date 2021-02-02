@@ -41,6 +41,10 @@ html {
 }
 
 body {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   display: flex;
   height: 100%;
   flex-direction: column;
@@ -56,11 +60,11 @@ header {
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
-  height: 56px;
   background-color: #000;
-
+  height: 56px;
   flex-grow: 0;
   order: 0;
+  z-index: 2;
 }
 
 .back {
@@ -75,34 +79,40 @@ header {
   font-family: "Press Start 2P";
   font-style: normal;
   font-weight: normal;
-  font-size: 0.9rem;
+  font-size: 1rem;
   text-align: left;
   color: #aaa;
   margin: auto 1rem;
 }
 
-header ul {
+.navMenu {
   display: none;
+  position: absolute;
+  top: 0;
+  flex-direction: column;
   white-space: nowrap;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   text-align: right;
-  width: 100%;
+  font-size: 1rem;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
   order: 1;
-  font-size: 0.9rem;
+  padding: 0 1rem;
 }
 
-header ul li {
+.navMenu li {
   cursor: pointer;
   color: #aaa;
-  margin: 0 1rem 0 0;
+  margin: 0 0 2rem 0;
 }
 
-header ul li:last-child {
+.navMenu li:last-child {
   margin: 0;
 }
 
-header ul li.active {
+.navMenu li.active {
   color: #fff;
 }
 
@@ -112,6 +122,7 @@ header ul li.active {
   height: 100%;
   flex: none;
   order: 2;
+  z-index: 1;
 }
 
 .burger img {
@@ -209,7 +220,7 @@ footer {
 
 /* Works page */
 .works {
-  margin-top: 64px;
+  margin-top: 56px;
   width: 100%;
   column-count: 1;
   max-width: 1024px;
@@ -273,9 +284,12 @@ footer {
     height: 40px;
   }
 
+  .navMenu li {
+    margin: 0 0 1rem 0;
+  }
+
   #nazarFigure {
-    position: absolute;
-    visibility: hidden;
+    display: none;
   }
 
   #navigation {
@@ -290,13 +304,23 @@ footer {
 }
 
 @media screen and (min-width:768px) {
-  .back p {
-    font-size: 1rem;
+  header {
+    height: 64px;
   }
 
-  header ul {
+  .navMenu {
     display: flex;
-    font-size: 1rem;
+    position: relative;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
+    height: 100%;
+    width: auto;
+    background-color: transparent;
+  }
+
+  .navMenu li {
+  margin: auto 1rem auto 0;
   }
 
   .burger {
@@ -317,33 +341,11 @@ footer {
 
   .works {
     margin-top: 64px;
-    width: 100%;
     column-count: 2;
-    max-width: 1024px;
-    display: inline-block;
   }
 }
 
 @media screen and (min-width:1200px) {
-  .back p {
-    font-size: 1.1rem;
-  }
-
-  header ul {
-    font-size: 1.1rem;
-  }
-
-  #navigation {
-    font-size: 1.35rem;
-  }
-
-  #navigation a {
-    margin-bottom: 2em;
-  }
-
-  .credits {
-    font-size: 1rem;
-  }
 }
 
 @media screen and (max-height:425px) and (orientation:landscape) {

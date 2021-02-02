@@ -27,3 +27,13 @@ $(document).ready(function() {
     $(this).addClass("active").siblings().removeClass("active");
   })
 })
+
+function openMenu() {
+  const scrollY = document.body.style.top;
+  var x = document.querySelector('.navMenu');
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "flex";
+  }
+}
