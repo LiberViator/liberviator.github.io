@@ -134,6 +134,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-grow: 1;
   /* flex:1; */
   order: 1;
   /* background-color: red; */
@@ -143,7 +144,7 @@ header {
   height: auto;
   width: 100%;
   object-fit: contain;
-  /* flex: 4; */
+  flex: 4;
   order: 0;
   /* background-color: blue; */
 }
