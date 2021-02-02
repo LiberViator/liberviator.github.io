@@ -62,7 +62,6 @@ header {
   align-items: center;
   background-color: #000;
   height: 56px;
-  flex: none;
   order: 0;
   z-index: 2;
 }
@@ -71,7 +70,6 @@ header {
   display: flex;
   cursor: pointer;
   height: 100%;
-  flex: none;
   order: 0;
 }
 
@@ -120,7 +118,6 @@ header {
   display: flex;
   cursor: pointer;
   height: 100%;
-  flex: none;
   order: 2;
   z-index: 1;
 }
@@ -137,7 +134,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex:1;
+  /* flex:1; */
   order: 1;
   /* background-color: red; */
 }
@@ -146,7 +143,7 @@ header {
   height: auto;
   width: 100%;
   object-fit: contain;
-  flex: 4;
+  /* flex: 4; */
   order: 0;
   /* background-color: blue; */
 }
@@ -190,7 +187,7 @@ header {
   text-align: center;
   color: #222222;
   margin: 1rem 0;
-  flex: none;
+  /* flex: none; */
   /* background-color: yellow; */
 }
 
