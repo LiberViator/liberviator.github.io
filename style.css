@@ -137,6 +137,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex:1;
   order: 1;
   /* background-color: red; */
 }
@@ -186,7 +187,6 @@ header {
   font-style: normal;
   font-weight: normal;
   font-size: 0.75rem;
-  line-height: 150%;
   text-align: center;
   color: #222222;
   margin: 1rem 0;
