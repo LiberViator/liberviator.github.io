@@ -190,7 +190,6 @@ header {
   text-align: center;
   color: #222222;
   margin: 1rem 0;
-  flex-grow: 0;
   flex: none;
   /* background-color: yellow; */
 }
@@ -198,7 +197,6 @@ header {
 .credits img {
   width: 1em;
   height: 1em;
-  color: #777;
 }
 
 footer {
