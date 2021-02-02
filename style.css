@@ -62,7 +62,7 @@ header {
   align-items: center;
   background-color: #000;
   height: 56px;
-  flex-grow: 0;
+  flex: none;
   order: 0;
   z-index: 2;
 }
@@ -137,8 +137,6 @@ header {
   justify-content: center;
   align-items: center;
   order: 1;
-  flex: 1;
-  flex-grow: 1;
   /* background-color: red; */
 }
 
@@ -191,6 +189,7 @@ header {
   text-align: center;
   color: #222222;
   margin: 1rem 0;
+  flex-grow: 0;
   flex: none;
   /* background-color: yellow; */
 }
@@ -206,6 +205,7 @@ footer {
   max-width: 1024px;
   order: 2;
   flex-grow: 0;
+  flex: none;
 }
 
 /* About page */
