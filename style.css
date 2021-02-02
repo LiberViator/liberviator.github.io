@@ -62,6 +62,7 @@ header {
   align-items: center;
   background-color: #000;
   height: 56px;
+  flex: none;
   order: 0;
   z-index: 2;
 }
@@ -184,11 +185,12 @@ header {
   font-family: "Press Start 2P";
   font-style: normal;
   font-weight: normal;
-  font-size: 1rem;
+  font-size: 0.75rem;
   line-height: 150%;
   text-align: center;
   color: #222222;
   margin: 1rem 0;
+  flex: none;
   /* background-color: yellow; */
 }
 
