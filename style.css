@@ -37,6 +37,8 @@ html {
   height: 100%;
   width: 100%;
   font-family: 'Press Start 2P';
+  font-style: normal;
+  font-weight: normal;
   background-color: #000;
 }
 
@@ -56,7 +58,6 @@ header {
   position: fixed;
   display: flex;
   width: 100%;
-  max-width: 1024px;
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
@@ -64,6 +65,7 @@ header {
   height: 56px;
   order: 0;
   z-index: 2;
+  flex: none;
 }
 
 .back {
@@ -74,9 +76,6 @@ header {
 }
 
 .back p {
-  font-family: "Press Start 2P";
-  font-style: normal;
-  font-weight: normal;
   font-size: 1rem;
   text-align: left;
   color: #fff;
@@ -102,7 +101,7 @@ header {
 
 .navMenu li {
   cursor: pointer;
-  color: #aaa;
+  color: #444;
   margin: 0 0 2rem 0;
 }
 
@@ -143,6 +142,7 @@ header {
 #nazarFigure {
   height: auto;
   width: 100%;
+  max-width: 512px;
   object-fit: contain;
   flex: 4;
   order: 0;
@@ -153,9 +153,9 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
   flex: 2;
   order: 1;
-  align-self: stretch;
   margin-top: 2em;
   overflow: hidden;
   font-size: 1rem;
@@ -163,17 +163,20 @@ header {
 }
 
 #navigation a {
-  font-family: "Press Start 2P";
-  font-style: normal;
-  font-weight: normal;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.1em;
+  font-size: 1rem;
   color: #fff;
-  flex: none;
-  flex-grow: 0;
   margin-bottom: 1.7em;
   /* background-color: orange; */
+}
+
+#navigation a:hover::before {
+  position: absolute;
+  /* text-shadow: -0.2em -0.2em red, 0.2em 0.2em blue; */
+  margin-left: -2em;
+  content: "•";
 }
 
 #navigation a:last-child {
@@ -181,12 +184,11 @@ header {
 }
 
 .credits {
-  font-family: "Press Start 2P";
-  font-style: normal;
-  font-weight: normal;
   font-size: 0.75rem;
   text-align: center;
+  line-height: 150%;
   color: #222222;
+  margin: 1rem 0 1rem 0;
   /* background-color: yellow; */
 }
 
@@ -200,9 +202,8 @@ footer {
   justify-content: center;
   align-content: center;
   width: 100%;
-  max-width: 1024px;
   order: 2;
-  padding: 0 0 1rem 0;
+  flex: none;
 }
 
 /* About page */
@@ -220,7 +221,6 @@ footer {
   margin-top: 56px;
   width: 100%;
   column-count: 1;
-  max-width: 1024px;
   display: inline-block;
   flex-grow: 1;
 }
@@ -324,11 +324,8 @@ footer {
     display: none;
   }
 
-  #navigation {
-    font-size: 1.25rem;
-  }
-
   #navigation a {
+    font-size: 1.25rem;
     margin-bottom: 1.9em;
   }
 
@@ -343,6 +340,21 @@ footer {
 }
 
 @media screen and (min-width:1200px) {
+  header {
+    max-width: 50%;
+  }
+
+  .home {
+    max-width: 50%;
+  }
+
+  .works {
+    max-width: 50%;
+  }
+
+  footer {
+    max-width: 50%;
+  }
 }
 
 @media screen and (max-height:425px) and (orientation:landscape) {
@@ -360,7 +372,6 @@ footer {
     align-items: flex-start;
     justify-content: center;
     margin: 0;
-
   }
 
   #navigation a {
