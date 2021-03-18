@@ -201,8 +201,6 @@ footer {
   height: 1em;
 }
 
-
-
 /* About page */
 #about {
   justify-content: flex-end;
@@ -294,7 +292,6 @@ footer {
   }
 
   .burger {
-    display: -webkit-none;
     display: none;
   }
 
@@ -304,7 +301,7 @@ footer {
   }
 
   .credits {
-    font-size: 0.9rem;
+    font-size: 0.875rem;
   }
 
   .works {
