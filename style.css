@@ -46,9 +46,7 @@ html {
 }
 
 body {
-  display: -webkit-flex;
   display: flex;
-  -webkit-flex-direction: column;
   flex-direction: column;
   align-items: center;
   background-color: green;
@@ -56,7 +54,6 @@ body {
 
 header {
   position: fixed;
-  display: -webkit-flex;
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -70,7 +67,6 @@ header {
 }
 
 .back {
-  display: -webkit-flex;
   display: flex;
   cursor: pointer;
   height: 100%;
@@ -85,11 +81,9 @@ header {
 }
 
 .navMenu {
-  display: -webkit-none;
   display: none;
   position: absolute;
   top: 0;
-  -webkit-flex-direction: column;
   flex-direction: column;
   white-space: nowrap;
   align-items: center;
@@ -118,7 +112,6 @@ header {
 }
 
 .burger {
-  display: -webkit-flex;
   display: flex;
   cursor: pointer;
   height: 100%;
@@ -133,9 +126,7 @@ header {
 .home {
   width: 100%;
   max-width: 512px;
-  display: -webkit-flex;
   display: flex;
-  -webkit-flex-direction: column;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -156,17 +147,13 @@ header {
 }
 
 #navigation {
-  display: -webkit-flex;
   display: flex;
-  -webkit-flex-direction: column;
   flex-direction: column;
   align-items: center;
   font-size: 1rem;
   width: 100%;
   flex: 2;
   order: 1;
-  margin-top: 2em;
-  overflow: hidden;
   /* background-color: magenta; */
 }
 
@@ -191,7 +178,6 @@ header {
 }
 
 footer {
-  display: -webkit-flex;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -203,11 +189,11 @@ footer {
 }
 
 .credits {
+  align-self: center;
   font-size: 0.75rem;
   text-align: center;
   line-height: 150%;
   color: #222222;
-  margin: 1rem 0 1rem 0;
   /* background-color: yellow; */
 }
 
@@ -317,12 +303,10 @@ footer {
   }
 
   .navMenu {
-    display: -webkit-flex;
     display: flex;
     position: relative;
     align-items: center;
     justify-content: flex-end;
-    -webkit-flex-direction: row;
     flex-direction: row;
     height: 100%;
     width: auto;
@@ -373,7 +357,6 @@ footer {
 
 @media screen and (max-height:425px) and (orientation:landscape) {
   .home {
-    -webkit-flex-direction: row;
     flex-direction: row;
   }
 
