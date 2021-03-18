@@ -43,19 +43,19 @@ html {
 }
 
 body {
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  display: -webkit-flex;
   display: flex;
   height: 100%;
+  width: 100%;
+  -webkit-flex-direction: column;
   flex-direction: column;
   align-items: center;
-  /* background-color: green; */
+  background-color: green;
 }
 
 header {
   position: fixed;
+  display: -webkit-flex;
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -69,6 +69,7 @@ header {
 }
 
 .back {
+  display: -webkit-flex;
   display: flex;
   cursor: pointer;
   height: 100%;
@@ -83,9 +84,11 @@ header {
 }
 
 .navMenu {
+  display: -webkit-none;
   display: none;
   position: absolute;
   top: 0;
+  -webkit-flex-direction: column;
   flex-direction: column;
   white-space: nowrap;
   align-items: center;
@@ -114,6 +117,7 @@ header {
 }
 
 .burger {
+  display: -webkit-flex;
   display: flex;
   cursor: pointer;
   height: 100%;
@@ -127,16 +131,17 @@ header {
 
 .home {
   width: 100%;
-  height: auto;
   max-width: 512px;
+  display: -webkit-flex;
   display: flex;
+  -webkit-flex-direction: column;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   /* flex-grow: 1; */
-  flex:1;
+  flex: 1;
   order: 1;
-  /* background-color: red; */
+  background-color: red;
 }
 
 #nazarFigure {
@@ -150,7 +155,9 @@ header {
 }
 
 #navigation {
+  display: -webkit-flex;
   display: flex;
+  -webkit-flex-direction: column;
   flex-direction: column;
   align-items: center;
   font-size: 1rem;
@@ -183,9 +190,11 @@ header {
 }
 
 footer {
+  display: -webkit-flex;
   display: flex;
   justify-content: center;
   align-content: center;
+  flex: none;
   width: 100%;
   height: 80px;
   order: 2;
@@ -306,10 +315,12 @@ footer {
   }
 
   .navMenu {
+    display: -webkit-flex;
     display: flex;
     position: relative;
     align-items: center;
     justify-content: flex-end;
+    -webkit-flex-direction: row;
     flex-direction: row;
     height: 100%;
     width: auto;
@@ -321,6 +332,7 @@ footer {
   }
 
   .burger {
+    display: -webkit-none;
     display: none;
   }
 
@@ -359,6 +371,7 @@ footer {
 
 @media screen and (max-height:425px) and (orientation:landscape) {
   .home {
+    -webkit-flex-direction: row;
     flex-direction: row;
   }
 
