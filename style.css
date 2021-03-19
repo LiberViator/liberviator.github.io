@@ -10,6 +10,15 @@
   box-sizing: border-box;
 }
 
+h1 {
+  font-size: 1rem;
+}
+
+p {
+  font-size: 0.75rem;
+  line-height: 150%;
+}
+
 .noselect {
   -webkit-user-drag: none;
   -webkit-touch-callout: none;
@@ -123,9 +132,9 @@ header {
   margin: auto 1rem;
 }
 
-.home {
+#home {
   width: 100%;
-  max-width: 512px;
+  /* max-width: 512px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -136,7 +145,17 @@ header {
   /* background-color: red; */
 }
 
-#nazarFigure {
+#about div {
+  color: #fff;
+  flex: 7;
+  max-width: 768px;
+}
+
+#about div h1 {
+  padding-bottom: 1em;
+}
+
+.nazarFigure {
   height: auto;
   width: 100%;
   max-width: 512px;
@@ -203,24 +222,24 @@ footer {
 
 /* About page */
 #about {
-  justify-content: flex-end;
-  flex-direction: row;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
   display: flex;
-  vertical-align: middle;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  order: 1;
 }
 
 /* Works page */
-.works {
+#works {
   margin-top: 56px;
   width: 100%;
   column-count: 1;
   display: inline-block;
-  flex-grow: 1;
+  flex: 1;
 }
 
-.works img {
+#works img {
   width: 100%;
   height: 100%;
   top: 0;
@@ -276,6 +295,10 @@ footer {
     height: 64px;
   }
 
+  .horizontal {
+    flex-direction: row;
+  }
+
   .navMenu {
     display: flex;
     position: relative;
@@ -304,13 +327,22 @@ footer {
     font-size: 0.875rem;
   }
 
-  .works {
+  #works {
     margin-top: 64px;
     column-count: 2;
   }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
 }
 
-@media screen and (min-width:1200px) {
+/* @media screen and (min-width:1200px) {
   header {
     max-width: 50%;
   }
@@ -326,14 +358,14 @@ footer {
   footer {
     max-width: 50%;
   }
-}
+} */
 
 @media screen and (max-height:425px) and (orientation:landscape) {
-  .home {
+  #home {
     flex-direction: row;
   }
 
-  #nazarFigure {
+  .nazarFigure {
     height: 100%;
     width: auto;
     flex: 5;
@@ -347,8 +379,26 @@ footer {
     font-size: 1rem;
     text-align: left;
   }
-  .works {
+  #works {
     column-count: 2;
   }
 }
+
+
+@media screen and (orientation:landscape) {
+  #home, #about, #works, header, footer {
+    max-width: 1024px;
+  }
+
+  #about {
+    padding: 0 16px;
+    flex-direction: row;
+  }
+}
+
+@media screen and (orientation:portrait) {
+  #about {
+    padding: 0 16px;
+    flex-direction: column;
+  }
 }
