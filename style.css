@@ -223,10 +223,12 @@ footer {
 }
 
 #about div {
-  overflow-y: scroll;
+  position: static;
+  overflow: scroll;
   -webkit-overflow-scrolling: touch;
   display: flex;
   flex-direction: column;
+  height: 100%;
   width: 100%;
   color: #fff;
   flex: 7;
