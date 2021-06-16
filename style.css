@@ -113,7 +113,7 @@ header {
 
   font-size: 1.25rem;
   font-weight: 400;
-  line-height: 1.5rem;
+  line-height: 1.25rem;
   color: white;
   margin-bottom: 16px;
 
@@ -142,7 +142,7 @@ header {
   flex-direction: column;
   order: 5;
 
-  padding: 8px 0 16px 0;
+  padding: 4px 0 16px 0;
   margin-bottom: 40px;
 
   width: 100%;
@@ -306,7 +306,7 @@ header {
   }
 }
 
-@media only screen and (min-height: 928px) {
+@media only screen and (min-height: 912px) {
   html, body {
     height: 100%;
   }
