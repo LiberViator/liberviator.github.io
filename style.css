@@ -40,10 +40,9 @@ img {
 
 html {
   font-family: 'Montserrat', sans-serif;
-  font-style: normal;
-  font-weight: normal;
   background: #000000;
   width: 100%;
+  transition: left 2s;
 }
 
 body {
@@ -69,20 +68,22 @@ header {
   align-items: flex-start;
   justify-content: flex-start;
   margin: 64px 16px 16px 16px;
-
   height: auto;
+  flex-shrink: 0;
+
+  transition: all .4s;
+  -o-transition: all .4s;
+  -moz-transition: all .4s;
+  -webkit-transition: all .4s;
 }
 
 #about .photo {
   display: flex;
   order: 1;
-
   object-fit: scale-down;
-
   width: 100%;
   margin: 0 0 16px 0;
   filter: grayscale(100%);
-
   flex: 0;
   flex-shrink: 1;
 }
@@ -93,46 +94,42 @@ header {
 
 #about h1 {
   order: 2;
-
   width: 100%;
-
   font-size: 1.5rem;
   font-weight: 900;
   line-height: 1.75rem;
   color: white;
   margin-bottom: 8px;
-
   flex: 0;
   flex-shrink: 0;
+
+  transition: width .25s linear;
+  -o-transition: with .25s linear;
+  -moz-transition: with .25s linear;
+  -webkit-transition: with .25s linear;
 }
 
 #about h2 {
   order: 3;
-
   width: 100%;
-
   font-size: 1.25rem;
   font-weight: 400;
   line-height: 1.25rem;
   color: white;
   margin-bottom: 16px;
-
   flex: 0;
   flex-shrink: 0;
 }
 
 #about p {
   order: 4;
-
   width: 100%;
-
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5rem;
   text-align: justify;
   color: white;
   margin-bottom: 16px;
-
   flex: 0;
   flex-shrink: 0;
 }
@@ -141,10 +138,8 @@ header {
   display: flex;
   flex-direction: column;
   order: 5;
-
   padding: 4px 0 16px 0;
   margin-bottom: 40px;
-
   width: 100%;
   flex: 1;
   flex-shrink: 0;
@@ -156,11 +151,8 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 8px 12px;
-
   height: 40px;
-
   background: #1C1C1C;
-
   font-size: 1rem;
   font-weight: 700;
   line-height: 1rem;
@@ -168,14 +160,13 @@ header {
 }
 
 #about li:not(:last-child) {
-    margin-bottom: 12px;
+  margin-bottom: 12px;
 }
 
 #about li div {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
   position: static;
   width: 112px;
 }
@@ -200,24 +191,18 @@ header {
   display: flex;
   flex-direction: row;
   order: 6;
-
-
   justify-content: center;
   align-items: center;
   padding: 8px 12px;
-
   width: 100%;
   height: 40px;
-
   background: #FFF500;
-
   font-style: italic;
   font-weight: 900;
   font-size: 1.5rem;
   line-height: 1.5rem;
   text-align: center;
   text-transform: uppercase;
-
   flex: 0;
   flex-shrink: 0;
 }
@@ -227,25 +212,24 @@ header {
   flex-direction: column;
   align-items: flex-start;
   margin: 64px 0 16px 0;
-
-
   min-width: 344px;
   max-width: 520px;
   width: 100%;
   height: 1024px;
   display: none;
+
+  transition: all .4s;
+  -o-transition: all .4s;
+  -moz-transition: all .4s;
+  -webkit-transition: all .4s;
 }
 
 .card {
   padding: 24px 32px;
-
   display: flex;
-  /* flex-grow: 1; */
   align-items: flex-end;
-
   height: 100%;
   width: 100%;
-
   background-image: url("https://images.unsplash.com/photo-1623716495270-48dd5004496e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80");
   background-repeat: no-repeat;
   background-size: cover;
@@ -254,7 +238,7 @@ header {
 }
 
 .card:not(:last-child) {
-    margin-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .card:hover {
@@ -263,20 +247,17 @@ header {
 
 .card span {
   padding: 8px 12px;
-
   left: 32px;
   bottom: 24px;
-
   font-style: italic;
   font-weight: 900;
   font-size: 1.5rem;
   line-height: 1.5rem;
-
   color: white;
   background: #000000;
 }
 
-@media only screen and (min-width: 660px) {
+@media screen and (min-width: 660px) {
   body {
     flex-direction: row;
   }
@@ -287,18 +268,13 @@ header {
 
   #about {
     margin: 16px 16px 16px 16px;
-
     width: 248px;
-
   }
 
   #work {
     display: flex;
     margin: 16px 16px 16px 0;
-
     height: auto;
-
-    flex: 7;
   }
 
   .card {
@@ -306,7 +282,7 @@ header {
   }
 }
 
-@media only screen and (min-height: 912px) {
+@media screen and (min-width: 660px) and (min-height: 920px) {
   html, body {
     height: 100%;
   }
