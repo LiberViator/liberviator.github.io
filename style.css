@@ -70,7 +70,6 @@ header {
   margin: 64px 16px 16px 16px;
   height: auto;
   flex-shrink: 0;
-
   transition: all .4s;
   -o-transition: all .4s;
   -moz-transition: all .4s;
@@ -102,7 +101,6 @@ header {
   margin-bottom: 8px;
   flex: 0;
   flex-shrink: 0;
-
   transition: width .25s linear;
   -o-transition: with .25s linear;
   -moz-transition: with .25s linear;
@@ -112,9 +110,9 @@ header {
 #about h2 {
   order: 3;
   width: 100%;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   font-weight: 400;
-  line-height: 1.25rem;
+  line-height: 1.375rem;
   color: white;
   margin-bottom: 16px;
   flex: 0;
@@ -124,9 +122,9 @@ header {
 #about p {
   order: 4;
   width: 100%;
-  font-size: 1rem;
+  font-size: 0.9375rem;
   font-weight: 400;
-  line-height: 1.5rem;
+  line-height: 1.4375rem;
   text-align: justify;
   color: white;
   margin-bottom: 16px;
@@ -153,7 +151,7 @@ header {
   padding: 8px 12px;
   height: 40px;
   background: #1C1C1C;
-  font-size: 1rem;
+  font-size: 0.9375rem;
   font-weight: 700;
   line-height: 1rem;
   color: white;
@@ -217,7 +215,6 @@ header {
   width: 100%;
   height: 1024px;
   display: none;
-
   transition: all .4s;
   -o-transition: all .4s;
   -moz-transition: all .4s;
