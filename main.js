@@ -3,7 +3,7 @@ function switchPages() {
   var workPage = document.getElementById("work");
   var switcher = document.getElementById("switcher");
 
-  if (aboutPage.style.display === "flex") {
+  if (workPage.style.display === "none") {
     workPage.style.display = "flex";
     aboutPage.style.display = "none";
     switcher.style.justifyContent = "flex-end";
